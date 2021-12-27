@@ -71,6 +71,34 @@
 		83450667277A4B290037CAF2 /* SuperHeroDetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450658277A4B290037CAF2 /* SuperHeroDetailWorker.swift */; };
 		83450668277A4B290037CAF2 /* SuperHeroDetailFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450659277A4B290037CAF2 /* SuperHeroDetailFactory.swift */; };
 		83450669277A4B290037CAF2 /* SuperHeroDetailDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345065A277A4B290037CAF2 /* SuperHeroDetailDependencyContainer.swift */; };
+		83450693277A4D570037CAF2 /* GenresRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345066E277A4D570037CAF2 /* GenresRouter.swift */; };
+		83450694277A4D570037CAF2 /* GenresInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345066F277A4D570037CAF2 /* GenresInteractor.swift */; };
+		83450695277A4D570037CAF2 /* SeriesDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450671277A4D570037CAF2 /* SeriesDataWrapper.swift */; };
+		83450696277A4D570037CAF2 /* GenresModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450672277A4D570037CAF2 /* GenresModels.swift */; };
+		83450697277A4D570037CAF2 /* EventsDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450673277A4D570037CAF2 /* EventsDataWrapper.swift */; };
+		83450698277A4D570037CAF2 /* ComicDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450674277A4D570037CAF2 /* ComicDataWrapper.swift */; };
+		83450699277A4D570037CAF2 /* StoriesDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450675277A4D570037CAF2 /* StoriesDataWrapper.swift */; };
+		8345069A277A4D570037CAF2 /* GenresPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450676277A4D570037CAF2 /* GenresPresenter.swift */; };
+		8345069B277A4D570037CAF2 /* SeriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345067A277A4D570037CAF2 /* SeriesTableViewCell.swift */; };
+		8345069C277A4D570037CAF2 /* SeriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8345067B277A4D570037CAF2 /* SeriesTableViewCell.xib */; };
+		8345069D277A4D570037CAF2 /* SeriesTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345067C277A4D570037CAF2 /* SeriesTableCellViewModel.swift */; };
+		8345069E277A4D570037CAF2 /* ComicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8345067E277A4D570037CAF2 /* ComicTableViewCell.xib */; };
+		8345069F277A4D570037CAF2 /* ComicTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345067F277A4D570037CAF2 /* ComicTableCellViewModel.swift */; };
+		834506A0277A4D570037CAF2 /* ComicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450680277A4D570037CAF2 /* ComicTableViewCell.swift */; };
+		834506A1277A4D570037CAF2 /* StoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450682277A4D570037CAF2 /* StoriesTableViewCell.swift */; };
+		834506A2277A4D570037CAF2 /* StoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83450683277A4D570037CAF2 /* StoriesTableViewCell.xib */; };
+		834506A3277A4D570037CAF2 /* StroiesTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450684277A4D570037CAF2 /* StroiesTableCellViewModel.swift */; };
+		834506A4277A4D570037CAF2 /* EventTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450686277A4D570037CAF2 /* EventTableCellViewModel.swift */; };
+		834506A5277A4D570037CAF2 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83450687277A4D570037CAF2 /* EventTableViewCell.xib */; };
+		834506A6277A4D570037CAF2 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450688277A4D570037CAF2 /* EventTableViewCell.swift */; };
+		834506A7277A4D570037CAF2 /* GenresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83450689277A4D570037CAF2 /* GenresViewController.xib */; };
+		834506A8277A4D570037CAF2 /* GenresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345068A277A4D570037CAF2 /* GenresViewController.swift */; };
+		834506A9277A4D570037CAF2 /* GenresWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345068C277A4D570037CAF2 /* GenresWorker.swift */; };
+		834506AA277A4D570037CAF2 /* GenresService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345068D277A4D570037CAF2 /* GenresService.swift */; };
+		834506AB277A4D570037CAF2 /* GenresEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345068E277A4D570037CAF2 /* GenresEndpoint.swift */; };
+		834506AC277A4D570037CAF2 /* GenresLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345068F277A4D570037CAF2 /* GenresLogger.swift */; };
+		834506AD277A4D570037CAF2 /* GenresFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450691277A4D570037CAF2 /* GenresFactory.swift */; };
+		834506AE277A4D570037CAF2 /* GenresDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450692277A4D570037CAF2 /* GenresDependencyContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +190,34 @@
 		83450658277A4B290037CAF2 /* SuperHeroDetailWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailWorker.swift; sourceTree = "<group>"; };
 		83450659277A4B290037CAF2 /* SuperHeroDetailFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailFactory.swift; sourceTree = "<group>"; };
 		8345065A277A4B290037CAF2 /* SuperHeroDetailDependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailDependencyContainer.swift; sourceTree = "<group>"; };
+		8345066E277A4D570037CAF2 /* GenresRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenresRouter.swift; sourceTree = "<group>"; };
+		8345066F277A4D570037CAF2 /* GenresInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenresInteractor.swift; sourceTree = "<group>"; };
+		83450671277A4D570037CAF2 /* SeriesDataWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesDataWrapper.swift; sourceTree = "<group>"; };
+		83450672277A4D570037CAF2 /* GenresModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenresModels.swift; sourceTree = "<group>"; };
+		83450673277A4D570037CAF2 /* EventsDataWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsDataWrapper.swift; sourceTree = "<group>"; };
+		83450674277A4D570037CAF2 /* ComicDataWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicDataWrapper.swift; sourceTree = "<group>"; };
+		83450675277A4D570037CAF2 /* StoriesDataWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesDataWrapper.swift; sourceTree = "<group>"; };
+		83450676277A4D570037CAF2 /* GenresPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenresPresenter.swift; sourceTree = "<group>"; };
+		8345067A277A4D570037CAF2 /* SeriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesTableViewCell.swift; sourceTree = "<group>"; };
+		8345067B277A4D570037CAF2 /* SeriesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeriesTableViewCell.xib; sourceTree = "<group>"; };
+		8345067C277A4D570037CAF2 /* SeriesTableCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesTableCellViewModel.swift; sourceTree = "<group>"; };
+		8345067E277A4D570037CAF2 /* ComicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComicTableViewCell.xib; sourceTree = "<group>"; };
+		8345067F277A4D570037CAF2 /* ComicTableCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicTableCellViewModel.swift; sourceTree = "<group>"; };
+		83450680277A4D570037CAF2 /* ComicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicTableViewCell.swift; sourceTree = "<group>"; };
+		83450682277A4D570037CAF2 /* StoriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesTableViewCell.swift; sourceTree = "<group>"; };
+		83450683277A4D570037CAF2 /* StoriesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoriesTableViewCell.xib; sourceTree = "<group>"; };
+		83450684277A4D570037CAF2 /* StroiesTableCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StroiesTableCellViewModel.swift; sourceTree = "<group>"; };
+		83450686277A4D570037CAF2 /* EventTableCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableCellViewModel.swift; sourceTree = "<group>"; };
+		83450687277A4D570037CAF2 /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		83450688277A4D570037CAF2 /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		83450689277A4D570037CAF2 /* GenresViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenresViewController.xib; sourceTree = "<group>"; };
+		8345068A277A4D570037CAF2 /* GenresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenresViewController.swift; sourceTree = "<group>"; };
+		8345068C277A4D570037CAF2 /* GenresWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenresWorker.swift; sourceTree = "<group>"; };
+		8345068D277A4D570037CAF2 /* GenresService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenresService.swift; sourceTree = "<group>"; };
+		8345068E277A4D570037CAF2 /* GenresEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenresEndpoint.swift; sourceTree = "<group>"; };
+		8345068F277A4D570037CAF2 /* GenresLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenresLogger.swift; sourceTree = "<group>"; };
+		83450691277A4D570037CAF2 /* GenresFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenresFactory.swift; sourceTree = "<group>"; };
+		83450692277A4D570037CAF2 /* GenresDependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenresDependencyContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,13 +299,13 @@
 			children = (
 				83450523277A3CCD0037CAF2 /* AppDelegate.swift */,
 				834505C9277A3E430037CAF2 /* Debouncer.swift */,
+				834505CC277A3E430037CAF2 /* SuperHeroErrors.swift */,
 				834505CA277A3E430037CAF2 /* DependencyContainer */,
 				834505C2277A3E430037CAF2 /* EmptyList */,
 				834505BA277A3E430037CAF2 /* Extensions */,
 				834505AE277A3E430037CAF2 /* Logger */,
 				834505B0277A3E430037CAF2 /* Network */,
 				834505C0277A3E430037CAF2 /* NibLoader */,
-				834505CC277A3E430037CAF2 /* SuperHeroErrors.swift */,
 				834505A6277A3E430037CAF2 /* TableView */,
 				834505C5277A3E430037CAF2 /* ViewStateManagerView */,
 			);
@@ -260,10 +316,10 @@
 			isa = PBXGroup;
 			children = (
 				834505A8277A3E430037CAF2 /* CellViewModel.swift */,
-				834505A9277A3E430037CAF2 /* DefaultSectionHeaderView */,
 				834505AD277A3E430037CAF2 /* SectionViewModel.swift */,
 				834505AC277A3E430037CAF2 /* TableView.swift */,
 				834505A7277A3E430037CAF2 /* TableViewDataSource.swift */,
+				834505A9277A3E430037CAF2 /* DefaultSectionHeaderView */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -288,7 +344,6 @@
 		834505B0277A3E430037CAF2 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				834505B8277A3E430037CAF2 /* Helper */,
 				834505B3277A3E430037CAF2 /* Interactor.swift */,
 				834505B2277A3E430037CAF2 /* NetworkManager.swift */,
 				834505B5277A3E430037CAF2 /* NetworkManagerProtocol.swift */,
@@ -296,6 +351,7 @@
 				834505B7277A3E430037CAF2 /* QueryService.swift */,
 				834505B6277A3E430037CAF2 /* RequestProtocol.swift */,
 				834505B1277A3E430037CAF2 /* ResponseModel.swift */,
+				834505B8277A3E430037CAF2 /* Helper */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -357,6 +413,7 @@
 		834505FC277A42E10037CAF2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8345066D277A4D570037CAF2 /* Genres */,
 				83450646277A4B280037CAF2 /* SuperHeroDetail */,
 				834505FE277A43840037CAF2 /* SuperHeros */,
 			);
@@ -376,14 +433,14 @@
 		834505FE277A43840037CAF2 /* SuperHeros */ = {
 			isa = PBXGroup;
 			children = (
+				83450601277A43840037CAF2 /* SuperHerosInteractor.swift */,
+				8345060C277A43840037CAF2 /* SuperHerosLogger.swift */,
 				834505FF277A43840037CAF2 /* SuperHerosPresenter.swift */,
 				83450600277A43840037CAF2 /* SuperHerosRouter.swift */,
-				83450601277A43840037CAF2 /* SuperHerosInteractor.swift */,
-				83450602277A43840037CAF2 /* Models */,
-				83450605277A43840037CAF2 /* View */,
-				8345060C277A43840037CAF2 /* SuperHerosLogger.swift */,
-				8345060D277A43840037CAF2 /* Service */,
 				83450611277A43840037CAF2 /* DependencyContainer */,
+				83450602277A43840037CAF2 /* Models */,
+				8345060D277A43840037CAF2 /* Service */,
+				83450605277A43840037CAF2 /* View */,
 			);
 			path = SuperHeros;
 			sourceTree = "<group>";
@@ -400,8 +457,8 @@
 		83450605277A43840037CAF2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				83450606277A43840037CAF2 /* SuperHerosViewController.xib */,
 				83450607277A43840037CAF2 /* SuperHerosViewController.swift */,
+				83450606277A43840037CAF2 /* SuperHerosViewController.xib */,
 				83450608277A43840037CAF2 /* Cell */,
 			);
 			path = View;
@@ -410,8 +467,8 @@
 		83450608277A43840037CAF2 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				83450609277A43840037CAF2 /* SuperHeroTableViewCell.swift */,
 				8345060A277A43840037CAF2 /* SuperHeroCellViewModel.swift */,
+				83450609277A43840037CAF2 /* SuperHeroTableViewCell.swift */,
 				8345060B277A43840037CAF2 /* SuperHeroTableViewCell.xib */,
 			);
 			path = Cell;
@@ -421,8 +478,8 @@
 			isa = PBXGroup;
 			children = (
 				8345060E277A43840037CAF2 /* SuperHerosEndpoint.swift */,
-				8345060F277A43840037CAF2 /* SuperHerosWorker.swift */,
 				83450610277A43840037CAF2 /* SuperHerosService.swift */,
+				8345060F277A43840037CAF2 /* SuperHerosWorker.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -494,6 +551,113 @@
 			children = (
 				8345065A277A4B290037CAF2 /* SuperHeroDetailDependencyContainer.swift */,
 				83450659277A4B290037CAF2 /* SuperHeroDetailFactory.swift */,
+			);
+			path = DependencyContainer;
+			sourceTree = "<group>";
+		};
+		8345066D277A4D570037CAF2 /* Genres */ = {
+			isa = PBXGroup;
+			children = (
+				8345066F277A4D570037CAF2 /* GenresInteractor.swift */,
+				8345068F277A4D570037CAF2 /* GenresLogger.swift */,
+				83450676277A4D570037CAF2 /* GenresPresenter.swift */,
+				8345066E277A4D570037CAF2 /* GenresRouter.swift */,
+				83450690277A4D570037CAF2 /* DependencyContainer */,
+				83450670277A4D570037CAF2 /* Models */,
+				8345068B277A4D570037CAF2 /* Service */,
+				83450677277A4D570037CAF2 /* View */,
+			);
+			path = Genres;
+			sourceTree = "<group>";
+		};
+		83450670277A4D570037CAF2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				83450674277A4D570037CAF2 /* ComicDataWrapper.swift */,
+				83450673277A4D570037CAF2 /* EventsDataWrapper.swift */,
+				83450672277A4D570037CAF2 /* GenresModels.swift */,
+				83450671277A4D570037CAF2 /* SeriesDataWrapper.swift */,
+				83450675277A4D570037CAF2 /* StoriesDataWrapper.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		83450677277A4D570037CAF2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8345068A277A4D570037CAF2 /* GenresViewController.swift */,
+				83450689277A4D570037CAF2 /* GenresViewController.xib */,
+				83450678277A4D570037CAF2 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83450678277A4D570037CAF2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				83450679277A4D570037CAF2 /* Series */,
+				8345067D277A4D570037CAF2 /* Comics */,
+				83450681277A4D570037CAF2 /* Stroies */,
+				83450685277A4D570037CAF2 /* Events */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		83450679277A4D570037CAF2 /* Series */ = {
+			isa = PBXGroup;
+			children = (
+				8345067A277A4D570037CAF2 /* SeriesTableViewCell.swift */,
+				8345067B277A4D570037CAF2 /* SeriesTableViewCell.xib */,
+				8345067C277A4D570037CAF2 /* SeriesTableCellViewModel.swift */,
+			);
+			path = Series;
+			sourceTree = "<group>";
+		};
+		8345067D277A4D570037CAF2 /* Comics */ = {
+			isa = PBXGroup;
+			children = (
+				8345067E277A4D570037CAF2 /* ComicTableViewCell.xib */,
+				8345067F277A4D570037CAF2 /* ComicTableCellViewModel.swift */,
+				83450680277A4D570037CAF2 /* ComicTableViewCell.swift */,
+			);
+			path = Comics;
+			sourceTree = "<group>";
+		};
+		83450681277A4D570037CAF2 /* Stroies */ = {
+			isa = PBXGroup;
+			children = (
+				83450682277A4D570037CAF2 /* StoriesTableViewCell.swift */,
+				83450683277A4D570037CAF2 /* StoriesTableViewCell.xib */,
+				83450684277A4D570037CAF2 /* StroiesTableCellViewModel.swift */,
+			);
+			path = Stroies;
+			sourceTree = "<group>";
+		};
+		83450685277A4D570037CAF2 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				83450686277A4D570037CAF2 /* EventTableCellViewModel.swift */,
+				83450687277A4D570037CAF2 /* EventTableViewCell.xib */,
+				83450688277A4D570037CAF2 /* EventTableViewCell.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		8345068B277A4D570037CAF2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8345068E277A4D570037CAF2 /* GenresEndpoint.swift */,
+				8345068D277A4D570037CAF2 /* GenresService.swift */,
+				8345068C277A4D570037CAF2 /* GenresWorker.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		83450690277A4D570037CAF2 /* DependencyContainer */ = {
+			isa = PBXGroup;
+			children = (
+				83450692277A4D570037CAF2 /* GenresDependencyContainer.swift */,
+				83450691277A4D570037CAF2 /* GenresFactory.swift */,
 			);
 			path = DependencyContainer;
 			sourceTree = "<group>";
@@ -601,10 +765,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				834506A7277A4D570037CAF2 /* GenresViewController.xib in Resources */,
+				834506A5277A4D570037CAF2 /* EventTableViewCell.xib in Resources */,
 				834505E2277A3E430037CAF2 /* EmptyListView.xib in Resources */,
+				834506A2277A4D570037CAF2 /* StoriesTableViewCell.xib in Resources */,
+				8345069C277A4D570037CAF2 /* SeriesTableViewCell.xib in Resources */,
 				83450530277A3CCE0037CAF2 /* LaunchScreen.storyboard in Resources */,
 				8345052D277A3CCE0037CAF2 /* Assets.xcassets in Resources */,
 				83450662277A4B290037CAF2 /* SuperHeroDetailViewController.xib in Resources */,
+				8345069E277A4D570037CAF2 /* ComicTableViewCell.xib in Resources */,
 				83450660277A4B290037CAF2 /* SuperHeroDetailTableViewCell.xib in Resources */,
 				8345061D277A43840037CAF2 /* SuperHeroTableViewCell.xib in Resources */,
 				834505D0277A3E430037CAF2 /* DefaultSectionHeaderFooterView.xib in Resources */,
@@ -634,10 +803,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				83450622277A43840037CAF2 /* SuperHerosDependencyContainer.swift in Sources */,
+				834506A0277A4D570037CAF2 /* ComicTableViewCell.swift in Sources */,
 				834505DF277A3E430037CAF2 /* UIViewController+Ext.swift in Sources */,
 				834505D5277A3E430037CAF2 /* NetworkManager.swift in Sources */,
+				83450699277A4D570037CAF2 /* StoriesDataWrapper.swift in Sources */,
 				834505CF277A3E430037CAF2 /* DefaultSectionHeaderFooterView.swift in Sources */,
 				83450667277A4B290037CAF2 /* SuperHeroDetailWorker.swift in Sources */,
+				834506A1277A4D570037CAF2 /* StoriesTableViewCell.swift in Sources */,
 				834505D6277A3E430037CAF2 /* Interactor.swift in Sources */,
 				83450614277A43840037CAF2 /* SuperHerosPresenter.swift in Sources */,
 				83450618277A43840037CAF2 /* SuperHerosModels.swift in Sources */,
@@ -648,16 +820,25 @@
 				83450665277A4B290037CAF2 /* SuperHeroDetailEndpoint.swift in Sources */,
 				834505E9277A3E430037CAF2 /* SuperHeroErrors.swift in Sources */,
 				834505DA277A3E430037CAF2 /* QueryService.swift in Sources */,
+				834506A6277A4D570037CAF2 /* EventTableViewCell.swift in Sources */,
+				834506A9277A4D570037CAF2 /* GenresWorker.swift in Sources */,
 				834505CD277A3E430037CAF2 /* TableViewDataSource.swift in Sources */,
+				83450694277A4D570037CAF2 /* GenresInteractor.swift in Sources */,
 				834505CE277A3E430037CAF2 /* CellViewModel.swift in Sources */,
 				8345065F277A4B290037CAF2 /* SuperHeroDetailCellViewModel.swift in Sources */,
+				83450698277A4D570037CAF2 /* ComicDataWrapper.swift in Sources */,
 				83450617277A43840037CAF2 /* SuperHeros.swift in Sources */,
+				834506AE277A4D570037CAF2 /* GenresDependencyContainer.swift in Sources */,
+				834506AB277A4D570037CAF2 /* GenresEndpoint.swift in Sources */,
+				834506A4277A4D570037CAF2 /* EventTableCellViewModel.swift in Sources */,
 				834505E1277A3E430037CAF2 /* NibLoadableView.swift in Sources */,
 				83450621277A43840037CAF2 /* SuperHerosService.swift in Sources */,
+				8345069D277A4D570037CAF2 /* SeriesTableCellViewModel.swift in Sources */,
 				8345065D277A4B290037CAF2 /* SuperHeroDetailModels.swift in Sources */,
 				834505DB277A3E430037CAF2 /* InfoDictionary.swift in Sources */,
 				83450661277A4B290037CAF2 /* SuperHeroDetailTableViewCell.swift in Sources */,
 				834505D7277A3E430037CAF2 /* Parsable.swift in Sources */,
+				834506A3277A4D570037CAF2 /* StroiesTableCellViewModel.swift in Sources */,
 				834505E4277A3E430037CAF2 /* ActivityIndicator.swift in Sources */,
 				83450620277A43840037CAF2 /* SuperHerosWorker.swift in Sources */,
 				834505DC277A3E430037CAF2 /* CALayer+Ext.swift in Sources */,
@@ -665,28 +846,39 @@
 				8345061E277A43840037CAF2 /* SuperHerosLogger.swift in Sources */,
 				834505E8277A3E430037CAF2 /* DependencyContainer.swift in Sources */,
 				8345061C277A43840037CAF2 /* SuperHeroCellViewModel.swift in Sources */,
+				83450697277A4D570037CAF2 /* EventsDataWrapper.swift in Sources */,
 				834505E5277A3E430037CAF2 /* ViewStateManagerView.swift in Sources */,
 				834505D3277A3E430037CAF2 /* Logger.swift in Sources */,
 				834505D2277A3E430037CAF2 /* SectionViewModel.swift in Sources */,
 				8345065E277A4B290037CAF2 /* SuperHeroDetailViewController.swift in Sources */,
+				8345069A277A4D570037CAF2 /* GenresPresenter.swift in Sources */,
+				834506AA277A4D570037CAF2 /* GenresService.swift in Sources */,
 				83450616277A43840037CAF2 /* SuperHerosInteractor.swift in Sources */,
 				8345065B277A4B290037CAF2 /* SuperHeroDetailRouter.swift in Sources */,
+				834506A8277A4D570037CAF2 /* GenresViewController.swift in Sources */,
 				834505E3277A3E430037CAF2 /* EmptyListView.swift in Sources */,
 				83450623277A43840037CAF2 /* SuperHerosFactory.swift in Sources */,
 				83450663277A4B290037CAF2 /* SuperHeroDetailLogger.swift in Sources */,
+				8345069B277A4D570037CAF2 /* SeriesTableViewCell.swift in Sources */,
 				834505D4277A3E430037CAF2 /* ResponseModel.swift in Sources */,
 				83450668277A4B290037CAF2 /* SuperHeroDetailFactory.swift in Sources */,
 				83450669277A4B290037CAF2 /* SuperHeroDetailDependencyContainer.swift in Sources */,
 				83450666277A4B290037CAF2 /* SuperHeroDetailService.swift in Sources */,
 				8345061F277A43840037CAF2 /* SuperHerosEndpoint.swift in Sources */,
+				83450693277A4D570037CAF2 /* GenresRouter.swift in Sources */,
 				83450664277A4B290037CAF2 /* SuperHeroDetailPresenter.swift in Sources */,
+				83450696277A4D570037CAF2 /* GenresModels.swift in Sources */,
+				834506AC277A4D570037CAF2 /* GenresLogger.swift in Sources */,
+				834506AD277A4D570037CAF2 /* GenresFactory.swift in Sources */,
 				834505DE277A3E430037CAF2 /* UIAlertController+Ext.swift in Sources */,
 				8345061A277A43840037CAF2 /* SuperHerosViewController.swift in Sources */,
+				8345069F277A4D570037CAF2 /* ComicTableCellViewModel.swift in Sources */,
 				8345065C277A4B290037CAF2 /* SuperHeroDetailInteractor.swift in Sources */,
 				834505D8277A3E430037CAF2 /* NetworkManagerProtocol.swift in Sources */,
 				834505E7277A3E430037CAF2 /* Debouncer.swift in Sources */,
 				834505D9277A3E430037CAF2 /* RequestProtocol.swift in Sources */,
 				83450524277A3CCD0037CAF2 /* AppDelegate.swift in Sources */,
+				83450695277A4D570037CAF2 /* SeriesDataWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
