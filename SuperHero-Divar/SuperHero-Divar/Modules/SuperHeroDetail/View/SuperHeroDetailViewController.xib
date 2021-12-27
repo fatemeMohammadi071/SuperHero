@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuperHeroDetailViewController" customModule="SuperHero" customModuleProvider="target">
+            <connections>
+                <outlet property="favoriteButton" destination="hUF-sn-Mw4" id="kBl-bJ-EaM"/>
+                <outlet property="nameLabel" destination="C2I-TR-sZy" id="cWZ-lq-C2W"/>
+                <outlet property="tableView" destination="d4h-eU-A3W" id="wP0-N0-nPQ"/>
+                <outlet property="view" destination="T5p-YW-Dhm" id="sD0-Kc-tdi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="T5p-YW-Dhm">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bwk-Ay-IIL">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2I-TR-sZy">
+                            <rect key="frame" x="16" y="90" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUF-sn-Mw4">
+                            <rect key="frame" x="358" y="80.5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="oYE-s2-buk"/>
+                                <constraint firstAttribute="width" constant="40" id="qcP-4a-zIk"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                            <state key="normal" title="Button" image="unfavorite"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="hUF-sn-Mw4" firstAttribute="centerY" secondItem="C2I-TR-sZy" secondAttribute="centerY" id="4Ci-TP-ZDg"/>
+                        <constraint firstItem="C2I-TR-sZy" firstAttribute="leading" secondItem="bwk-Ay-IIL" secondAttribute="leading" constant="16" id="JmS-Ac-CO8"/>
+                        <constraint firstItem="C2I-TR-sZy" firstAttribute="top" secondItem="bwk-Ay-IIL" secondAttribute="top" constant="90" id="QP3-ct-enQ"/>
+                        <constraint firstAttribute="trailing" secondItem="hUF-sn-Mw4" secondAttribute="trailing" constant="16" id="Qbq-xf-9vE"/>
+                        <constraint firstAttribute="height" constant="200" id="UZx-YK-G23"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d4h-eU-A3W" customClass="DefaultTableView" customModule="SuperHero" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="200" width="414" height="696"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="t07-qa-hce"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="bwk-Ay-IIL" firstAttribute="top" secondItem="t07-qa-hce" secondAttribute="top" constant="-44" id="0Yi-4f-XE1"/>
+                <constraint firstItem="bwk-Ay-IIL" firstAttribute="trailing" secondItem="t07-qa-hce" secondAttribute="trailing" id="Vj8-7g-fKl"/>
+                <constraint firstItem="bwk-Ay-IIL" firstAttribute="leading" secondItem="t07-qa-hce" secondAttribute="leading" id="ecN-9u-Vuj"/>
+                <constraint firstItem="d4h-eU-A3W" firstAttribute="trailing" secondItem="t07-qa-hce" secondAttribute="trailing" id="jTX-9j-wgN"/>
+                <constraint firstItem="d4h-eU-A3W" firstAttribute="top" secondItem="bwk-Ay-IIL" secondAttribute="bottom" id="wml-AH-eBp"/>
+                <constraint firstAttribute="bottom" secondItem="d4h-eU-A3W" secondAttribute="bottom" id="x29-Ke-8m4"/>
+                <constraint firstItem="d4h-eU-A3W" firstAttribute="leading" secondItem="t07-qa-hce" secondAttribute="leading" id="x2s-DV-Yfg"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="69.642857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="unfavorite" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
