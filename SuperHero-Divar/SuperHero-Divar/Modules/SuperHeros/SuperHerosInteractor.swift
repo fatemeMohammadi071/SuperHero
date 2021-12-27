@@ -27,7 +27,7 @@ class SuperHerosInteractor: SuperHerosDataStore {
     }
     
     // MARK: - Properties
-    private let debouncer = Debouncer(timeInterval: 5)
+    private let debouncer = Debouncer(timeInterval: 0.5)
     
     // MARK: Public
     var presenter: SuperHerosPresentationLogic?
@@ -69,10 +69,7 @@ extension SuperHerosInteractor: SuperHerosBusinessLogic {
                 guard let self = self else { return }
                 switch result {
                 case .success(let superHerosInfo):
-                    guard let superHeroInfos: [SuperHeroInfo] = superHerosInfo, !superHeroInfos.isEmpty else {
-                        self.presenter?.presentError(response: SuperHeros.ErrorModel.Response(requestError: SuperHeroErrors.errorNoResult))
-                        return
-                    }
+                    guard let superHeroInfos: [SuperHeroInfo] = superHerosInfo, !superHeroInfos.isEmpty else { return }
                     self.presenter?.presentSearchResult(response: SuperHeros.SuperHeros.Response(superHeros: superHeroInfos))
                 case .failure(let error):
                     self.presenter?.presentError(response: SuperHeros.ErrorModel.Response(requestError: error))
