@@ -56,6 +56,21 @@
 		83450621277A43840037CAF2 /* SuperHerosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450610277A43840037CAF2 /* SuperHerosService.swift */; };
 		83450622277A43840037CAF2 /* SuperHerosDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450612277A43840037CAF2 /* SuperHerosDependencyContainer.swift */; };
 		83450623277A43840037CAF2 /* SuperHerosFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450613277A43840037CAF2 /* SuperHerosFactory.swift */; };
+		8345065B277A4B290037CAF2 /* SuperHeroDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450647277A4B280037CAF2 /* SuperHeroDetailRouter.swift */; };
+		8345065C277A4B290037CAF2 /* SuperHeroDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450648277A4B280037CAF2 /* SuperHeroDetailInteractor.swift */; };
+		8345065D277A4B290037CAF2 /* SuperHeroDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345064A277A4B280037CAF2 /* SuperHeroDetailModels.swift */; };
+		8345065E277A4B290037CAF2 /* SuperHeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345064C277A4B290037CAF2 /* SuperHeroDetailViewController.swift */; };
+		8345065F277A4B290037CAF2 /* SuperHeroDetailCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345064E277A4B290037CAF2 /* SuperHeroDetailCellViewModel.swift */; };
+		83450660277A4B290037CAF2 /* SuperHeroDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8345064F277A4B290037CAF2 /* SuperHeroDetailTableViewCell.xib */; };
+		83450661277A4B290037CAF2 /* SuperHeroDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450650277A4B290037CAF2 /* SuperHeroDetailTableViewCell.swift */; };
+		83450662277A4B290037CAF2 /* SuperHeroDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83450651277A4B290037CAF2 /* SuperHeroDetailViewController.xib */; };
+		83450663277A4B290037CAF2 /* SuperHeroDetailLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450652277A4B290037CAF2 /* SuperHeroDetailLogger.swift */; };
+		83450664277A4B290037CAF2 /* SuperHeroDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450653277A4B290037CAF2 /* SuperHeroDetailPresenter.swift */; };
+		83450665277A4B290037CAF2 /* SuperHeroDetailEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450655277A4B290037CAF2 /* SuperHeroDetailEndpoint.swift */; };
+		83450666277A4B290037CAF2 /* SuperHeroDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450656277A4B290037CAF2 /* SuperHeroDetailService.swift */; };
+		83450667277A4B290037CAF2 /* SuperHeroDetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450658277A4B290037CAF2 /* SuperHeroDetailWorker.swift */; };
+		83450668277A4B290037CAF2 /* SuperHeroDetailFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450659277A4B290037CAF2 /* SuperHeroDetailFactory.swift */; };
+		83450669277A4B290037CAF2 /* SuperHeroDetailDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345065A277A4B290037CAF2 /* SuperHeroDetailDependencyContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +147,21 @@
 		83450612277A43840037CAF2 /* SuperHerosDependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHerosDependencyContainer.swift; sourceTree = "<group>"; };
 		83450613277A43840037CAF2 /* SuperHerosFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHerosFactory.swift; sourceTree = "<group>"; };
 		83450627277A46C80037CAF2 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		83450647277A4B280037CAF2 /* SuperHeroDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailRouter.swift; sourceTree = "<group>"; };
+		83450648277A4B280037CAF2 /* SuperHeroDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailInteractor.swift; sourceTree = "<group>"; };
+		8345064A277A4B280037CAF2 /* SuperHeroDetailModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailModels.swift; sourceTree = "<group>"; };
+		8345064C277A4B290037CAF2 /* SuperHeroDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailViewController.swift; sourceTree = "<group>"; };
+		8345064E277A4B290037CAF2 /* SuperHeroDetailCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailCellViewModel.swift; sourceTree = "<group>"; };
+		8345064F277A4B290037CAF2 /* SuperHeroDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuperHeroDetailTableViewCell.xib; sourceTree = "<group>"; };
+		83450650277A4B290037CAF2 /* SuperHeroDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailTableViewCell.swift; sourceTree = "<group>"; };
+		83450651277A4B290037CAF2 /* SuperHeroDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuperHeroDetailViewController.xib; sourceTree = "<group>"; };
+		83450652277A4B290037CAF2 /* SuperHeroDetailLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailLogger.swift; sourceTree = "<group>"; };
+		83450653277A4B290037CAF2 /* SuperHeroDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailPresenter.swift; sourceTree = "<group>"; };
+		83450655277A4B290037CAF2 /* SuperHeroDetailEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailEndpoint.swift; sourceTree = "<group>"; };
+		83450656277A4B290037CAF2 /* SuperHeroDetailService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailService.swift; sourceTree = "<group>"; };
+		83450658277A4B290037CAF2 /* SuperHeroDetailWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailWorker.swift; sourceTree = "<group>"; };
+		83450659277A4B290037CAF2 /* SuperHeroDetailFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailFactory.swift; sourceTree = "<group>"; };
+		8345065A277A4B290037CAF2 /* SuperHeroDetailDependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailDependencyContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,6 +357,7 @@
 		834505FC277A42E10037CAF2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				83450646277A4B280037CAF2 /* SuperHeroDetail */,
 				834505FE277A43840037CAF2 /* SuperHeros */,
 			);
 			path = Modules;
@@ -401,6 +432,68 @@
 			children = (
 				83450612277A43840037CAF2 /* SuperHerosDependencyContainer.swift */,
 				83450613277A43840037CAF2 /* SuperHerosFactory.swift */,
+			);
+			path = DependencyContainer;
+			sourceTree = "<group>";
+		};
+		83450646277A4B280037CAF2 /* SuperHeroDetail */ = {
+			isa = PBXGroup;
+			children = (
+				83450657277A4B290037CAF2 /* DependencyContainer */,
+				83450649277A4B280037CAF2 /* Models */,
+				83450654277A4B290037CAF2 /* Service */,
+				83450648277A4B280037CAF2 /* SuperHeroDetailInteractor.swift */,
+				83450652277A4B290037CAF2 /* SuperHeroDetailLogger.swift */,
+				83450653277A4B290037CAF2 /* SuperHeroDetailPresenter.swift */,
+				83450647277A4B280037CAF2 /* SuperHeroDetailRouter.swift */,
+				8345064B277A4B290037CAF2 /* View */,
+			);
+			path = SuperHeroDetail;
+			sourceTree = "<group>";
+		};
+		83450649277A4B280037CAF2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8345064A277A4B280037CAF2 /* SuperHeroDetailModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8345064B277A4B290037CAF2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8345064D277A4B290037CAF2 /* Cell */,
+				8345064C277A4B290037CAF2 /* SuperHeroDetailViewController.swift */,
+				83450651277A4B290037CAF2 /* SuperHeroDetailViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8345064D277A4B290037CAF2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8345064E277A4B290037CAF2 /* SuperHeroDetailCellViewModel.swift */,
+				83450650277A4B290037CAF2 /* SuperHeroDetailTableViewCell.swift */,
+				8345064F277A4B290037CAF2 /* SuperHeroDetailTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		83450654277A4B290037CAF2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				83450655277A4B290037CAF2 /* SuperHeroDetailEndpoint.swift */,
+				83450656277A4B290037CAF2 /* SuperHeroDetailService.swift */,
+				83450658277A4B290037CAF2 /* SuperHeroDetailWorker.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		83450657277A4B290037CAF2 /* DependencyContainer */ = {
+			isa = PBXGroup;
+			children = (
+				8345065A277A4B290037CAF2 /* SuperHeroDetailDependencyContainer.swift */,
+				83450659277A4B290037CAF2 /* SuperHeroDetailFactory.swift */,
 			);
 			path = DependencyContainer;
 			sourceTree = "<group>";
@@ -511,6 +604,8 @@
 				834505E2277A3E430037CAF2 /* EmptyListView.xib in Resources */,
 				83450530277A3CCE0037CAF2 /* LaunchScreen.storyboard in Resources */,
 				8345052D277A3CCE0037CAF2 /* Assets.xcassets in Resources */,
+				83450662277A4B290037CAF2 /* SuperHeroDetailViewController.xib in Resources */,
+				83450660277A4B290037CAF2 /* SuperHeroDetailTableViewCell.xib in Resources */,
 				8345061D277A43840037CAF2 /* SuperHeroTableViewCell.xib in Resources */,
 				834505D0277A3E430037CAF2 /* DefaultSectionHeaderFooterView.xib in Resources */,
 				83450619277A43840037CAF2 /* SuperHerosViewController.xib in Resources */,
@@ -542,6 +637,7 @@
 				834505DF277A3E430037CAF2 /* UIViewController+Ext.swift in Sources */,
 				834505D5277A3E430037CAF2 /* NetworkManager.swift in Sources */,
 				834505CF277A3E430037CAF2 /* DefaultSectionHeaderFooterView.swift in Sources */,
+				83450667277A4B290037CAF2 /* SuperHeroDetailWorker.swift in Sources */,
 				834505D6277A3E430037CAF2 /* Interactor.swift in Sources */,
 				83450614277A43840037CAF2 /* SuperHerosPresenter.swift in Sources */,
 				83450618277A43840037CAF2 /* SuperHerosModels.swift in Sources */,
@@ -549,14 +645,18 @@
 				8345061B277A43840037CAF2 /* SuperHeroTableViewCell.swift in Sources */,
 				834505D1277A3E430037CAF2 /* TableView.swift in Sources */,
 				83450615277A43840037CAF2 /* SuperHerosRouter.swift in Sources */,
+				83450665277A4B290037CAF2 /* SuperHeroDetailEndpoint.swift in Sources */,
 				834505E9277A3E430037CAF2 /* SuperHeroErrors.swift in Sources */,
 				834505DA277A3E430037CAF2 /* QueryService.swift in Sources */,
 				834505CD277A3E430037CAF2 /* TableViewDataSource.swift in Sources */,
 				834505CE277A3E430037CAF2 /* CellViewModel.swift in Sources */,
+				8345065F277A4B290037CAF2 /* SuperHeroDetailCellViewModel.swift in Sources */,
 				83450617277A43840037CAF2 /* SuperHeros.swift in Sources */,
 				834505E1277A3E430037CAF2 /* NibLoadableView.swift in Sources */,
 				83450621277A43840037CAF2 /* SuperHerosService.swift in Sources */,
+				8345065D277A4B290037CAF2 /* SuperHeroDetailModels.swift in Sources */,
 				834505DB277A3E430037CAF2 /* InfoDictionary.swift in Sources */,
+				83450661277A4B290037CAF2 /* SuperHeroDetailTableViewCell.swift in Sources */,
 				834505D7277A3E430037CAF2 /* Parsable.swift in Sources */,
 				834505E4277A3E430037CAF2 /* ActivityIndicator.swift in Sources */,
 				83450620277A43840037CAF2 /* SuperHerosWorker.swift in Sources */,
@@ -568,13 +668,21 @@
 				834505E5277A3E430037CAF2 /* ViewStateManagerView.swift in Sources */,
 				834505D3277A3E430037CAF2 /* Logger.swift in Sources */,
 				834505D2277A3E430037CAF2 /* SectionViewModel.swift in Sources */,
+				8345065E277A4B290037CAF2 /* SuperHeroDetailViewController.swift in Sources */,
 				83450616277A43840037CAF2 /* SuperHerosInteractor.swift in Sources */,
+				8345065B277A4B290037CAF2 /* SuperHeroDetailRouter.swift in Sources */,
 				834505E3277A3E430037CAF2 /* EmptyListView.swift in Sources */,
 				83450623277A43840037CAF2 /* SuperHerosFactory.swift in Sources */,
+				83450663277A4B290037CAF2 /* SuperHeroDetailLogger.swift in Sources */,
 				834505D4277A3E430037CAF2 /* ResponseModel.swift in Sources */,
+				83450668277A4B290037CAF2 /* SuperHeroDetailFactory.swift in Sources */,
+				83450669277A4B290037CAF2 /* SuperHeroDetailDependencyContainer.swift in Sources */,
+				83450666277A4B290037CAF2 /* SuperHeroDetailService.swift in Sources */,
 				8345061F277A43840037CAF2 /* SuperHerosEndpoint.swift in Sources */,
+				83450664277A4B290037CAF2 /* SuperHeroDetailPresenter.swift in Sources */,
 				834505DE277A3E430037CAF2 /* UIAlertController+Ext.swift in Sources */,
 				8345061A277A43840037CAF2 /* SuperHerosViewController.swift in Sources */,
+				8345065C277A4B290037CAF2 /* SuperHeroDetailInteractor.swift in Sources */,
 				834505D8277A3E430037CAF2 /* NetworkManagerProtocol.swift in Sources */,
 				834505E7277A3E430037CAF2 /* Debouncer.swift in Sources */,
 				834505D9277A3E430037CAF2 /* RequestProtocol.swift in Sources */,
