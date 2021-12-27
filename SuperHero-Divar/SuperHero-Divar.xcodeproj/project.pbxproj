@@ -8,13 +8,54 @@
 
 /* Begin PBXBuildFile section */
 		83450524277A3CCD0037CAF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450523277A3CCD0037CAF2 /* AppDelegate.swift */; };
-		83450526277A3CCD0037CAF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450525277A3CCD0037CAF2 /* SceneDelegate.swift */; };
-		83450528277A3CCD0037CAF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450527277A3CCD0037CAF2 /* ViewController.swift */; };
-		8345052B277A3CCD0037CAF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83450529277A3CCD0037CAF2 /* Main.storyboard */; };
 		8345052D277A3CCE0037CAF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8345052C277A3CCE0037CAF2 /* Assets.xcassets */; };
 		83450530277A3CCE0037CAF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8345052E277A3CCE0037CAF2 /* LaunchScreen.storyboard */; };
 		8345053B277A3CCF0037CAF2 /* SuperHero_DivarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345053A277A3CCF0037CAF2 /* SuperHero_DivarTests.swift */; };
 		83450546277A3CCF0037CAF2 /* SuperHero_DivarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450545277A3CCF0037CAF2 /* SuperHero_DivarUITests.swift */; };
+		834505CD277A3E430037CAF2 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505A7277A3E430037CAF2 /* TableViewDataSource.swift */; };
+		834505CE277A3E430037CAF2 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505A8277A3E430037CAF2 /* CellViewModel.swift */; };
+		834505CF277A3E430037CAF2 /* DefaultSectionHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505AA277A3E430037CAF2 /* DefaultSectionHeaderFooterView.swift */; };
+		834505D0277A3E430037CAF2 /* DefaultSectionHeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834505AB277A3E430037CAF2 /* DefaultSectionHeaderFooterView.xib */; };
+		834505D1277A3E430037CAF2 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505AC277A3E430037CAF2 /* TableView.swift */; };
+		834505D2277A3E430037CAF2 /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505AD277A3E430037CAF2 /* SectionViewModel.swift */; };
+		834505D3277A3E430037CAF2 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505AF277A3E430037CAF2 /* Logger.swift */; };
+		834505D4277A3E430037CAF2 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505B1277A3E430037CAF2 /* ResponseModel.swift */; };
+		834505D5277A3E430037CAF2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505B2277A3E430037CAF2 /* NetworkManager.swift */; };
+		834505D6277A3E430037CAF2 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505B3277A3E430037CAF2 /* Interactor.swift */; };
+		834505D7277A3E430037CAF2 /* Parsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505B4277A3E430037CAF2 /* Parsable.swift */; };
+		834505D8277A3E430037CAF2 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505B5277A3E430037CAF2 /* NetworkManagerProtocol.swift */; };
+		834505D9277A3E430037CAF2 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505B6277A3E430037CAF2 /* RequestProtocol.swift */; };
+		834505DA277A3E430037CAF2 /* QueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505B7277A3E430037CAF2 /* QueryService.swift */; };
+		834505DB277A3E430037CAF2 /* InfoDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505B9277A3E430037CAF2 /* InfoDictionary.swift */; };
+		834505DC277A3E430037CAF2 /* CALayer+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505BB277A3E430037CAF2 /* CALayer+Ext.swift */; };
+		834505DD277A3E430037CAF2 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505BC277A3E430037CAF2 /* String+Ext.swift */; };
+		834505DE277A3E430037CAF2 /* UIAlertController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505BD277A3E430037CAF2 /* UIAlertController+Ext.swift */; };
+		834505DF277A3E430037CAF2 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505BE277A3E430037CAF2 /* UIViewController+Ext.swift */; };
+		834505E0277A3E430037CAF2 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505BF277A3E430037CAF2 /* UIView+Ext.swift */; };
+		834505E1277A3E430037CAF2 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505C1277A3E430037CAF2 /* NibLoadableView.swift */; };
+		834505E2277A3E430037CAF2 /* EmptyListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834505C3277A3E430037CAF2 /* EmptyListView.xib */; };
+		834505E3277A3E430037CAF2 /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505C4277A3E430037CAF2 /* EmptyListView.swift */; };
+		834505E4277A3E430037CAF2 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505C6277A3E430037CAF2 /* ActivityIndicator.swift */; };
+		834505E5277A3E430037CAF2 /* ViewStateManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505C7277A3E430037CAF2 /* ViewStateManagerView.swift */; };
+		834505E7277A3E430037CAF2 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505C9277A3E430037CAF2 /* Debouncer.swift */; };
+		834505E8277A3E430037CAF2 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505CB277A3E430037CAF2 /* DependencyContainer.swift */; };
+		834505E9277A3E430037CAF2 /* SuperHeroErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505CC277A3E430037CAF2 /* SuperHeroErrors.swift */; };
+		83450614277A43840037CAF2 /* SuperHerosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834505FF277A43840037CAF2 /* SuperHerosPresenter.swift */; };
+		83450615277A43840037CAF2 /* SuperHerosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450600277A43840037CAF2 /* SuperHerosRouter.swift */; };
+		83450616277A43840037CAF2 /* SuperHerosInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450601277A43840037CAF2 /* SuperHerosInteractor.swift */; };
+		83450617277A43840037CAF2 /* SuperHeros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450603277A43840037CAF2 /* SuperHeros.swift */; };
+		83450618277A43840037CAF2 /* SuperHerosModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450604277A43840037CAF2 /* SuperHerosModels.swift */; };
+		83450619277A43840037CAF2 /* SuperHerosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83450606277A43840037CAF2 /* SuperHerosViewController.xib */; };
+		8345061A277A43840037CAF2 /* SuperHerosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450607277A43840037CAF2 /* SuperHerosViewController.swift */; };
+		8345061B277A43840037CAF2 /* SuperHeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450609277A43840037CAF2 /* SuperHeroTableViewCell.swift */; };
+		8345061C277A43840037CAF2 /* SuperHeroCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345060A277A43840037CAF2 /* SuperHeroCellViewModel.swift */; };
+		8345061D277A43840037CAF2 /* SuperHeroTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8345060B277A43840037CAF2 /* SuperHeroTableViewCell.xib */; };
+		8345061E277A43840037CAF2 /* SuperHerosLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345060C277A43840037CAF2 /* SuperHerosLogger.swift */; };
+		8345061F277A43840037CAF2 /* SuperHerosEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345060E277A43840037CAF2 /* SuperHerosEndpoint.swift */; };
+		83450620277A43840037CAF2 /* SuperHerosWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345060F277A43840037CAF2 /* SuperHerosWorker.swift */; };
+		83450621277A43840037CAF2 /* SuperHerosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450610277A43840037CAF2 /* SuperHerosService.swift */; };
+		83450622277A43840037CAF2 /* SuperHerosDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450612277A43840037CAF2 /* SuperHerosDependencyContainer.swift */; };
+		83450623277A43840037CAF2 /* SuperHerosFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450613277A43840037CAF2 /* SuperHerosFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +78,6 @@
 /* Begin PBXFileReference section */
 		83450520277A3CCD0037CAF2 /* SuperHero-Divar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SuperHero-Divar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83450523277A3CCD0037CAF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83450525277A3CCD0037CAF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		83450527277A3CCD0037CAF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8345052A277A3CCD0037CAF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8345052C277A3CCE0037CAF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8345052F277A3CCE0037CAF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83450531277A3CCE0037CAF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +87,51 @@
 		83450541277A3CCF0037CAF2 /* SuperHero-DivarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SuperHero-DivarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83450545277A3CCF0037CAF2 /* SuperHero_DivarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHero_DivarUITests.swift; sourceTree = "<group>"; };
 		83450547277A3CCF0037CAF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834505A7277A3E430037CAF2 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		834505A8277A3E430037CAF2 /* CellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
+		834505AA277A3E430037CAF2 /* DefaultSectionHeaderFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultSectionHeaderFooterView.swift; sourceTree = "<group>"; };
+		834505AB277A3E430037CAF2 /* DefaultSectionHeaderFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultSectionHeaderFooterView.xib; sourceTree = "<group>"; };
+		834505AC277A3E430037CAF2 /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		834505AD277A3E430037CAF2 /* SectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionViewModel.swift; sourceTree = "<group>"; };
+		834505AF277A3E430037CAF2 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		834505B1277A3E430037CAF2 /* ResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		834505B2277A3E430037CAF2 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		834505B3277A3E430037CAF2 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		834505B4277A3E430037CAF2 /* Parsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parsable.swift; sourceTree = "<group>"; };
+		834505B5277A3E430037CAF2 /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		834505B6277A3E430037CAF2 /* RequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		834505B7277A3E430037CAF2 /* QueryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryService.swift; sourceTree = "<group>"; };
+		834505B9277A3E430037CAF2 /* InfoDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoDictionary.swift; sourceTree = "<group>"; };
+		834505BB277A3E430037CAF2 /* CALayer+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Ext.swift"; sourceTree = "<group>"; };
+		834505BC277A3E430037CAF2 /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		834505BD277A3E430037CAF2 /* UIAlertController+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Ext.swift"; sourceTree = "<group>"; };
+		834505BE277A3E430037CAF2 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		834505BF277A3E430037CAF2 /* UIView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		834505C1277A3E430037CAF2 /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		834505C3277A3E430037CAF2 /* EmptyListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyListView.xib; sourceTree = "<group>"; };
+		834505C4277A3E430037CAF2 /* EmptyListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyListView.swift; sourceTree = "<group>"; };
+		834505C6277A3E430037CAF2 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		834505C7277A3E430037CAF2 /* ViewStateManagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStateManagerView.swift; sourceTree = "<group>"; };
+		834505C9277A3E430037CAF2 /* Debouncer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
+		834505CB277A3E430037CAF2 /* DependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		834505CC277A3E430037CAF2 /* SuperHeroErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroErrors.swift; sourceTree = "<group>"; };
+		834505FF277A43840037CAF2 /* SuperHerosPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHerosPresenter.swift; sourceTree = "<group>"; };
+		83450600277A43840037CAF2 /* SuperHerosRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHerosRouter.swift; sourceTree = "<group>"; };
+		83450601277A43840037CAF2 /* SuperHerosInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHerosInteractor.swift; sourceTree = "<group>"; };
+		83450603277A43840037CAF2 /* SuperHeros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeros.swift; sourceTree = "<group>"; };
+		83450604277A43840037CAF2 /* SuperHerosModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHerosModels.swift; sourceTree = "<group>"; };
+		83450606277A43840037CAF2 /* SuperHerosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuperHerosViewController.xib; sourceTree = "<group>"; };
+		83450607277A43840037CAF2 /* SuperHerosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHerosViewController.swift; sourceTree = "<group>"; };
+		83450609277A43840037CAF2 /* SuperHeroTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroTableViewCell.swift; sourceTree = "<group>"; };
+		8345060A277A43840037CAF2 /* SuperHeroCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroCellViewModel.swift; sourceTree = "<group>"; };
+		8345060B277A43840037CAF2 /* SuperHeroTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuperHeroTableViewCell.xib; sourceTree = "<group>"; };
+		8345060C277A43840037CAF2 /* SuperHerosLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHerosLogger.swift; sourceTree = "<group>"; };
+		8345060E277A43840037CAF2 /* SuperHerosEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHerosEndpoint.swift; sourceTree = "<group>"; };
+		8345060F277A43840037CAF2 /* SuperHerosWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHerosWorker.swift; sourceTree = "<group>"; };
+		83450610277A43840037CAF2 /* SuperHerosService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHerosService.swift; sourceTree = "<group>"; };
+		83450612277A43840037CAF2 /* SuperHerosDependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHerosDependencyContainer.swift; sourceTree = "<group>"; };
+		83450613277A43840037CAF2 /* SuperHerosFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHerosFactory.swift; sourceTree = "<group>"; };
+		83450627277A46C80037CAF2 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +182,9 @@
 		83450522277A3CCD0037CAF2 /* SuperHero-Divar */ = {
 			isa = PBXGroup;
 			children = (
-				83450523277A3CCD0037CAF2 /* AppDelegate.swift */,
-				83450525277A3CCD0037CAF2 /* SceneDelegate.swift */,
-				83450527277A3CCD0037CAF2 /* ViewController.swift */,
-				83450529277A3CCD0037CAF2 /* Main.storyboard */,
-				8345052C277A3CCE0037CAF2 /* Assets.xcassets */,
-				8345052E277A3CCE0037CAF2 /* LaunchScreen.storyboard */,
+				834505A5277A3E430037CAF2 /* Common */,
+				834505FC277A42E10037CAF2 /* Modules */,
+				834505FD277A42F00037CAF2 /* Resources */,
 				83450531277A3CCE0037CAF2 /* Info.plist */,
 			);
 			path = "SuperHero-Divar";
@@ -126,6 +206,203 @@
 				83450547277A3CCF0037CAF2 /* Info.plist */,
 			);
 			path = "SuperHero-DivarUITests";
+			sourceTree = "<group>";
+		};
+		834505A5277A3E430037CAF2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				83450523277A3CCD0037CAF2 /* AppDelegate.swift */,
+				834505C9277A3E430037CAF2 /* Debouncer.swift */,
+				834505CA277A3E430037CAF2 /* DependencyContainer */,
+				834505C2277A3E430037CAF2 /* EmptyList */,
+				834505BA277A3E430037CAF2 /* Extensions */,
+				834505AE277A3E430037CAF2 /* Logger */,
+				834505B0277A3E430037CAF2 /* Network */,
+				834505C0277A3E430037CAF2 /* NibLoader */,
+				834505CC277A3E430037CAF2 /* SuperHeroErrors.swift */,
+				834505A6277A3E430037CAF2 /* TableView */,
+				834505C5277A3E430037CAF2 /* ViewStateManagerView */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		834505A6277A3E430037CAF2 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				834505A8277A3E430037CAF2 /* CellViewModel.swift */,
+				834505A9277A3E430037CAF2 /* DefaultSectionHeaderView */,
+				834505AD277A3E430037CAF2 /* SectionViewModel.swift */,
+				834505AC277A3E430037CAF2 /* TableView.swift */,
+				834505A7277A3E430037CAF2 /* TableViewDataSource.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		834505A9277A3E430037CAF2 /* DefaultSectionHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				834505AA277A3E430037CAF2 /* DefaultSectionHeaderFooterView.swift */,
+				834505AB277A3E430037CAF2 /* DefaultSectionHeaderFooterView.xib */,
+			);
+			path = DefaultSectionHeaderView;
+			sourceTree = "<group>";
+		};
+		834505AE277A3E430037CAF2 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				834505AF277A3E430037CAF2 /* Logger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		834505B0277A3E430037CAF2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				834505B8277A3E430037CAF2 /* Helper */,
+				834505B3277A3E430037CAF2 /* Interactor.swift */,
+				834505B2277A3E430037CAF2 /* NetworkManager.swift */,
+				834505B5277A3E430037CAF2 /* NetworkManagerProtocol.swift */,
+				834505B4277A3E430037CAF2 /* Parsable.swift */,
+				834505B7277A3E430037CAF2 /* QueryService.swift */,
+				834505B6277A3E430037CAF2 /* RequestProtocol.swift */,
+				834505B1277A3E430037CAF2 /* ResponseModel.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		834505B8277A3E430037CAF2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				834505B9277A3E430037CAF2 /* InfoDictionary.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		834505BA277A3E430037CAF2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				834505BB277A3E430037CAF2 /* CALayer+Ext.swift */,
+				834505BC277A3E430037CAF2 /* String+Ext.swift */,
+				834505BD277A3E430037CAF2 /* UIAlertController+Ext.swift */,
+				834505BF277A3E430037CAF2 /* UIView+Ext.swift */,
+				834505BE277A3E430037CAF2 /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		834505C0277A3E430037CAF2 /* NibLoader */ = {
+			isa = PBXGroup;
+			children = (
+				834505C1277A3E430037CAF2 /* NibLoadableView.swift */,
+			);
+			path = NibLoader;
+			sourceTree = "<group>";
+		};
+		834505C2277A3E430037CAF2 /* EmptyList */ = {
+			isa = PBXGroup;
+			children = (
+				834505C4277A3E430037CAF2 /* EmptyListView.swift */,
+				834505C3277A3E430037CAF2 /* EmptyListView.xib */,
+			);
+			path = EmptyList;
+			sourceTree = "<group>";
+		};
+		834505C5277A3E430037CAF2 /* ViewStateManagerView */ = {
+			isa = PBXGroup;
+			children = (
+				834505C6277A3E430037CAF2 /* ActivityIndicator.swift */,
+				834505C7277A3E430037CAF2 /* ViewStateManagerView.swift */,
+			);
+			path = ViewStateManagerView;
+			sourceTree = "<group>";
+		};
+		834505CA277A3E430037CAF2 /* DependencyContainer */ = {
+			isa = PBXGroup;
+			children = (
+				834505CB277A3E430037CAF2 /* DependencyContainer.swift */,
+			);
+			path = DependencyContainer;
+			sourceTree = "<group>";
+		};
+		834505FC277A42E10037CAF2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				834505FE277A43840037CAF2 /* SuperHeros */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		834505FD277A42F00037CAF2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8345052C277A3CCE0037CAF2 /* Assets.xcassets */,
+				8345052E277A3CCE0037CAF2 /* LaunchScreen.storyboard */,
+				83450627277A46C80037CAF2 /* Config.xcconfig */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		834505FE277A43840037CAF2 /* SuperHeros */ = {
+			isa = PBXGroup;
+			children = (
+				834505FF277A43840037CAF2 /* SuperHerosPresenter.swift */,
+				83450600277A43840037CAF2 /* SuperHerosRouter.swift */,
+				83450601277A43840037CAF2 /* SuperHerosInteractor.swift */,
+				83450602277A43840037CAF2 /* Models */,
+				83450605277A43840037CAF2 /* View */,
+				8345060C277A43840037CAF2 /* SuperHerosLogger.swift */,
+				8345060D277A43840037CAF2 /* Service */,
+				83450611277A43840037CAF2 /* DependencyContainer */,
+			);
+			path = SuperHeros;
+			sourceTree = "<group>";
+		};
+		83450602277A43840037CAF2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				83450603277A43840037CAF2 /* SuperHeros.swift */,
+				83450604277A43840037CAF2 /* SuperHerosModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		83450605277A43840037CAF2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83450606277A43840037CAF2 /* SuperHerosViewController.xib */,
+				83450607277A43840037CAF2 /* SuperHerosViewController.swift */,
+				83450608277A43840037CAF2 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83450608277A43840037CAF2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				83450609277A43840037CAF2 /* SuperHeroTableViewCell.swift */,
+				8345060A277A43840037CAF2 /* SuperHeroCellViewModel.swift */,
+				8345060B277A43840037CAF2 /* SuperHeroTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8345060D277A43840037CAF2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8345060E277A43840037CAF2 /* SuperHerosEndpoint.swift */,
+				8345060F277A43840037CAF2 /* SuperHerosWorker.swift */,
+				83450610277A43840037CAF2 /* SuperHerosService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		83450611277A43840037CAF2 /* DependencyContainer */ = {
+			isa = PBXGroup;
+			children = (
+				83450612277A43840037CAF2 /* SuperHerosDependencyContainer.swift */,
+				83450613277A43840037CAF2 /* SuperHerosFactory.swift */,
+			);
+			path = DependencyContainer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +508,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				834505E2277A3E430037CAF2 /* EmptyListView.xib in Resources */,
 				83450530277A3CCE0037CAF2 /* LaunchScreen.storyboard in Resources */,
 				8345052D277A3CCE0037CAF2 /* Assets.xcassets in Resources */,
-				8345052B277A3CCD0037CAF2 /* Main.storyboard in Resources */,
+				8345061D277A43840037CAF2 /* SuperHeroTableViewCell.xib in Resources */,
+				834505D0277A3E430037CAF2 /* DefaultSectionHeaderFooterView.xib in Resources */,
+				83450619277A43840037CAF2 /* SuperHerosViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +538,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83450528277A3CCD0037CAF2 /* ViewController.swift in Sources */,
+				83450622277A43840037CAF2 /* SuperHerosDependencyContainer.swift in Sources */,
+				834505DF277A3E430037CAF2 /* UIViewController+Ext.swift in Sources */,
+				834505D5277A3E430037CAF2 /* NetworkManager.swift in Sources */,
+				834505CF277A3E430037CAF2 /* DefaultSectionHeaderFooterView.swift in Sources */,
+				834505D6277A3E430037CAF2 /* Interactor.swift in Sources */,
+				83450614277A43840037CAF2 /* SuperHerosPresenter.swift in Sources */,
+				83450618277A43840037CAF2 /* SuperHerosModels.swift in Sources */,
+				834505DD277A3E430037CAF2 /* String+Ext.swift in Sources */,
+				8345061B277A43840037CAF2 /* SuperHeroTableViewCell.swift in Sources */,
+				834505D1277A3E430037CAF2 /* TableView.swift in Sources */,
+				83450615277A43840037CAF2 /* SuperHerosRouter.swift in Sources */,
+				834505E9277A3E430037CAF2 /* SuperHeroErrors.swift in Sources */,
+				834505DA277A3E430037CAF2 /* QueryService.swift in Sources */,
+				834505CD277A3E430037CAF2 /* TableViewDataSource.swift in Sources */,
+				834505CE277A3E430037CAF2 /* CellViewModel.swift in Sources */,
+				83450617277A43840037CAF2 /* SuperHeros.swift in Sources */,
+				834505E1277A3E430037CAF2 /* NibLoadableView.swift in Sources */,
+				83450621277A43840037CAF2 /* SuperHerosService.swift in Sources */,
+				834505DB277A3E430037CAF2 /* InfoDictionary.swift in Sources */,
+				834505D7277A3E430037CAF2 /* Parsable.swift in Sources */,
+				834505E4277A3E430037CAF2 /* ActivityIndicator.swift in Sources */,
+				83450620277A43840037CAF2 /* SuperHerosWorker.swift in Sources */,
+				834505DC277A3E430037CAF2 /* CALayer+Ext.swift in Sources */,
+				834505E0277A3E430037CAF2 /* UIView+Ext.swift in Sources */,
+				8345061E277A43840037CAF2 /* SuperHerosLogger.swift in Sources */,
+				834505E8277A3E430037CAF2 /* DependencyContainer.swift in Sources */,
+				8345061C277A43840037CAF2 /* SuperHeroCellViewModel.swift in Sources */,
+				834505E5277A3E430037CAF2 /* ViewStateManagerView.swift in Sources */,
+				834505D3277A3E430037CAF2 /* Logger.swift in Sources */,
+				834505D2277A3E430037CAF2 /* SectionViewModel.swift in Sources */,
+				83450616277A43840037CAF2 /* SuperHerosInteractor.swift in Sources */,
+				834505E3277A3E430037CAF2 /* EmptyListView.swift in Sources */,
+				83450623277A43840037CAF2 /* SuperHerosFactory.swift in Sources */,
+				834505D4277A3E430037CAF2 /* ResponseModel.swift in Sources */,
+				8345061F277A43840037CAF2 /* SuperHerosEndpoint.swift in Sources */,
+				834505DE277A3E430037CAF2 /* UIAlertController+Ext.swift in Sources */,
+				8345061A277A43840037CAF2 /* SuperHerosViewController.swift in Sources */,
+				834505D8277A3E430037CAF2 /* NetworkManagerProtocol.swift in Sources */,
+				834505E7277A3E430037CAF2 /* Debouncer.swift in Sources */,
+				834505D9277A3E430037CAF2 /* RequestProtocol.swift in Sources */,
 				83450524277A3CCD0037CAF2 /* AppDelegate.swift in Sources */,
-				83450526277A3CCD0037CAF2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +614,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		83450529277A3CCD0037CAF2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8345052A277A3CCD0037CAF2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8345052E277A3CCE0037CAF2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -317,6 +627,7 @@
 /* Begin XCBuildConfiguration section */
 		83450548277A3CCF0037CAF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83450627277A46C80037CAF2 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -378,6 +689,7 @@
 		};
 		83450549277A3CCF0037CAF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83450627277A46C80037CAF2 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -433,12 +745,14 @@
 		};
 		8345054B277A3CCF0037CAF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83450627277A46C80037CAF2 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A3N8YQ9AVW;
 				INFOPLIST_FILE = "SuperHero-Divar/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,12 +766,14 @@
 		};
 		8345054C277A3CCF0037CAF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83450627277A46C80037CAF2 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A3N8YQ9AVW;
 				INFOPLIST_FILE = "SuperHero-Divar/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +787,7 @@
 		};
 		8345054E277A3CCF0037CAF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83450627277A46C80037CAF2 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +810,7 @@
 		};
 		8345054F277A3CCF0037CAF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83450627277A46C80037CAF2 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +833,7 @@
 		};
 		83450551277A3CCF0037CAF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83450627277A46C80037CAF2 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +854,7 @@
 		};
 		83450552277A3CCF0037CAF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83450627277A46C80037CAF2 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
