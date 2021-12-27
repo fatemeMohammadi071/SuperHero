@@ -1,0 +1,29 @@
+//
+//  Config.xcconfig
+//  SuperHero-Divar
+//
+//  Created by Fateme on 10/6/1400 AP.
+//
+
+// ==========================
+// MARK: - Internal Variables
+// ==========================
+FORWARD_SLASH = /
+
+// ==================
+// MARK: - App Config
+// ==================
+PRODUCT_NAME = SuperHero
+PRODUCT_DISPLAY_NAME = $(PRODUCT_NAME)
+
+// ============
+// MARK: - URLs
+// ============
+BASE_URL = http:$(FORWARD_SLASH)/gateway.marvel.com/v1
+
+// ===============
+// MARK: - Api Key
+// ===============
+API_KEY = 518a5b22890a81b60b0e459135f5e2d2
+PRIVATE_KEY= 93a81f6df29d4b3dbdf985ce4a97ccda09cb8426
+

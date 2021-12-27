@@ -45,8 +45,8 @@ extension SuperHerosRouter {}
 // MARK: - Routin Logic
 extension SuperHerosRouter: SuperHerosRoutingLogic {
     func navigateToSuperHeroDetail(superHeroInfo: SuperHeroInfo) {
-        let superHeroDetailDependencyContainer = SuperHeroDetailDependencyContainer()
-        let superHeroDetailViewController = superHeroDetailDependencyContainer.makeSuperHeroDetailViewController(superHeroInfo: superHeroInfo)
-        viewController?.navigationController?.pushViewController(superHeroDetailViewController, animated: true)
+//        let superHeroDetailDependencyContainer = SuperHeroDetailDependencyContainer()
+//        let superHeroDetailViewController = superHeroDetailDependencyContainer.makeSuperHeroDetailViewController(superHeroInfo: superHeroInfo)
+//        viewController?.navigationController?.pushViewController(superHeroDetailViewController, animated: true)
     }
 }
