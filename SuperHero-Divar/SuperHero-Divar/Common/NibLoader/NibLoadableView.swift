@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-public protocol NibLoadable: class {
+public protocol NibLoadable: AnyObject {
     /// Nib name of this object
     static var nibName: String { get }
 

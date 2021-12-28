@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol SuperHeroDetailCellViewModelDelegate: class {
+protocol SuperHeroDetailCellViewModelDelegate: AnyObject {
     func cellTapped(characterId: Int?, type: GenresType)
 }
 
