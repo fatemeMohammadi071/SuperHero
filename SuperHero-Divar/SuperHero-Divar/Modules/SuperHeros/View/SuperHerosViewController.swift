@@ -41,6 +41,13 @@ class SuperHerosViewController: UIViewController {
     // MARK: Private
     private var factory: SuperHerosFactory!
     private lazy var searchBar:UISearchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 20))
+    private lazy var footerActitvityIndicator: UIActivityIndicatorView = {
+            let spinner = UIActivityIndicatorView(style: .medium)
+            spinner.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: self.tableView.bounds.width, height: CGFloat(85))
+            spinner.startAnimating()
+            spinner.hidesWhenStopped = true
+            return spinner
+        }()
     
     // MARK: Public
     var interactor: SuperHerosBusinessLogic?
@@ -133,6 +140,7 @@ extension SuperHerosViewController: SuperHerosDisplayLogic {
 // MARK: - PaginationProtocol
 extension SuperHerosViewController: PaginationProtocol {
     func loadNextPage() {
+        tableView.setTableFooter(footerActitvityIndicator)
         offset += 1
         interactor?.fetchSuperHeros(request: SuperHeros.SuperHeros.Request(offset: offset))
     }
