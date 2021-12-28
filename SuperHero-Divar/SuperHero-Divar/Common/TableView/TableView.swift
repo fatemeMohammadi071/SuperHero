@@ -108,8 +108,7 @@ class DefaultTableView: UITableView {
         self.backgroundView = self.emptyListView
         self.emptyListView.setEmptyText(text)
         self.emptyListView.setIcon(icon)
-        // FIXME: Fatem
-        self.emptyListView.backgroundColor = backgroundColor ?? .white//UIColor(colorName: .appBlueLight)
+        self.emptyListView.backgroundColor = backgroundColor ?? .white
         self.emptyListView.configureButton(buttonText) {
             buttonTapHandler?()
         }
