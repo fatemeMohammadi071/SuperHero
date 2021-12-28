@@ -111,6 +111,7 @@ extension SuperHerosViewController: SuperHerosDisplayLogic {
         let dataSource = DefaultTableViewDataSource(sections: sections, paginationDelegate: self)
         self.tableView.displayData(dataSource)
         self.tableView.reloadData()
+        self.tableView.removeTableFooter()
     }
     
     func displaySearchResult(viewModel: SuperHeros.SuperHeros.ViewModel) {
