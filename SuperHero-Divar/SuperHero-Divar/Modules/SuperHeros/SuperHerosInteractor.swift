@@ -29,7 +29,7 @@ class SuperHerosInteractor: SuperHerosDataStore {
     
     // MARK: - Properties
     private let debouncer = Debouncer(timeInterval: 0.5)
-    private var SuperHeroInfos: [SuperHeroInfo] = []
+    private var superHeroInfos: [SuperHeroInfo] = []
 
     
     // MARK: Public
@@ -59,8 +59,8 @@ extension SuperHerosInteractor: SuperHerosBusinessLogic {
                     self.presenter?.presentError(response: SuperHeros.ErrorModel.Response(requestError: SuperHeroErrors.errorNoResult))
                     return
                 }
-                self.SuperHeroInfos.append(contentsOf: superHeroInfos)
-                self.presenter?.presentSuperHeros(response: SuperHeros.SuperHeros.Response(superHeros: self.SuperHeroInfos))
+                self.superHeroInfos.append(contentsOf: superHeroInfos)
+                self.presenter?.presentSuperHeros(response: SuperHeros.SuperHeros.Response(superHeros: self.superHeroInfos))
             case .failure(let erro):
                 self.presenter?.presentError(response: SuperHeros.ErrorModel.Response(requestError: erro))
             }
@@ -84,6 +84,6 @@ extension SuperHerosInteractor: SuperHerosBusinessLogic {
     }
     
     func reloaViewController(request: SuperHeros.SuperHeros.Request) {
-        self.presenter?.presentSuperHeros(response: SuperHeros.SuperHeros.Response(superHeros: self.SuperHeroInfos))
+        self.presenter?.presentSuperHeros(response: SuperHeros.SuperHeros.Response(superHeros: self.superHeroInfos))
     }
 }
