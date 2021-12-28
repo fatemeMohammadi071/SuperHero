@@ -37,7 +37,6 @@ class SuperHerosViewController: UIViewController {
     
     // MARK: - Properties
     var offset: Int = 0
-    var sections: [SectionViewModel] = []
     
     // MARK: Private
     private var factory: SuperHerosFactory!
@@ -61,7 +60,6 @@ extension SuperHerosViewController {
         setup()
         setupSearch()
         interactor?.fetchSuperHeros(request: SuperHeros.SuperHeros.Request(offset: 0))
-//        interactor?.searchCharacter(request: SuperHeros.Search.Request(name: "3-D Man"))
     
     }
 }
@@ -102,8 +100,7 @@ extension SuperHerosViewController {}
 // MARK: - Display Logic
 extension SuperHerosViewController: SuperHerosDisplayLogic {
     func displaySuperHeros(viewModel: SuperHeros.SuperHeros.ViewModel) {
-        guard let newSections = viewModel.sections else { return }
-        sections.append(contentsOf: newSections)
+        guard let sections = viewModel.sections else { return }
         let dataSource = DefaultTableViewDataSource(sections: sections, paginationDelegate: self)
         self.tableView.displayData(dataSource)
         self.tableView.reloadData()
@@ -147,14 +144,6 @@ extension SuperHerosViewController: SuperHeroCellViewModelDelegate {
         guard let model = model else { return }
         self.router?.navigateToSuperHeroDetail(superHeroInfo: model)
     }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        print("textFieldDidBeginEditing")
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        print("textFieldDidEndEditing")
-    }
 }
 
 // MARK: - Actions
@@ -162,7 +151,10 @@ extension SuperHerosViewController {}
 
 extension SuperHerosViewController: UITextFieldDelegate {
     @objc func textFieldValueChanged(_ sender: UITextField) {
-        guard let text = sender.text, !text.isEmpty else { return }
+        guard let text = sender.text, !text.isEmpty else {
+            self.interactor?.reloaViewController(request: SuperHeros.SuperHeros.Request(offset: 0))
+            return
+        }
         interactor?.searchCharacter(request: SuperHeros.Search.Request(name: text))
     }
 }
