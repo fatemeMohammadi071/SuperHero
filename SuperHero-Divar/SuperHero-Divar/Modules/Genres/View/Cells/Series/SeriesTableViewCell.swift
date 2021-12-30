@@ -41,10 +41,10 @@ private extension SeriesTableViewCell {
     private func setupViews(model: SeriesDetail) {
         self.setupTitleLabel(text: model.title ?? "")
         self.setupTypeLabel(text: model.type ?? "No type")
-        let startDate = model.startYear
-        let endDate = model.endYear
-        self.setupStartLabel(text: "\(String(describing: startDate))")
-        self.setupEndLabel(text: "\(String(describing: endDate))")
+        let startDate = model.startYear ?? 1972
+        let endDate = model.endYear ?? 1972
+        self.setupStartLabel(text: "\(startDate)")
+        self.setupEndLabel(text: "\(endDate)")
     }
     
     func setupTitleLabel(text: String) {
