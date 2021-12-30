@@ -19,6 +19,8 @@ class SuperHeroDetailTableViewCell: UITableViewCell {
     
     // MARK: - Outlets
     @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var countLabel: UILabel!
+    @IBOutlet private weak var icon: UIImageView!
 }
 // MARK: - Binder
 extension SuperHeroDetailTableViewCell: Binder {
@@ -35,8 +37,35 @@ extension SuperHeroDetailTableViewCell: Binder {
 // MARK: Private
 private extension SuperHeroDetailTableViewCell {
     private func setupViews(model: SuperHeroInfoDetail) {
-        // TODO: Set text and color
-        self.titleLabel.text = model.name.title
+        self.setupTitleLabel(text: model.name.title)
+        self.setupCountLabel(text: "\(model.count)")
+        self.setupIconImage(type: model.name)
+    }
+    
+    func setupTitleLabel(text: String) {
+        self.titleLabel.text = text
+        self.titleLabel.font = UIFont(type: .montserratBold, fontSize: 15)
+    }
+    
+    func setupCountLabel(text: String) {
+        self.countLabel.text = "Count: " + text
+        self.countLabel.font = UIFont(type: .montserratLight)
+    }
+    
+    func setupIconImage(type: SuperHeroInfoDetailType) {
+        let image: UIImage?
+        switch type {
+        case .comics:
+            image = #imageLiteral(resourceName: "comic")
+        case .series:
+            image = #imageLiteral(resourceName: "series")
+        case .stories:
+            image = #imageLiteral(resourceName: "fairy-tale")
+        case .events:
+            image = #imageLiteral(resourceName: "placard")
+        }
+        self.icon.image = image
+        self.icon.addCornerRadius(15)
     }
     
     func setupTapGesture() {
