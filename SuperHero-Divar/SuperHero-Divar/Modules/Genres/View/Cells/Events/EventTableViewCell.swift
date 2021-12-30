@@ -18,9 +18,8 @@ class EventTableViewCell: UITableViewCell {
     // MARK: = Delegate
     
     // MARK: - Outlets
-    @IBOutlet private weak var typeLabel: UILabel!
-    @IBOutlet private weak var languageLabel: UILabel!
-    @IBOutlet private weak var priceLabel: UILabel!
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var descriptionLabel: UILabel!
 
 }
 // MARK: - Binder
@@ -37,6 +36,17 @@ extension EventTableViewCell: Binder {
 // MARK: Private
 private extension EventTableViewCell {
     private func setupViews(model: EventDetail) {
-        // TODO: Set text and color
+        self.setupTitleLabel(text: model.title ?? "")
+        self.setupDescriptionLabel(text: model.resultDescription ?? "")
+    }
+    
+    func setupTitleLabel(text: String) {
+        self.titleLabel.text = text
+        self.titleLabel.font = UIFont(type: .montserratBlack)
+    }
+    
+    func setupDescriptionLabel(text: String) {
+        self.descriptionLabel.text = text
+        self.descriptionLabel.font = UIFont(type: .montserratLight)
     }
 }
