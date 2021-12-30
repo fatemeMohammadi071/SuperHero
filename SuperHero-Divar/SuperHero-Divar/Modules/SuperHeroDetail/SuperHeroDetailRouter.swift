@@ -9,7 +9,7 @@
 import UIKit
 
 protocol SuperHeroDetailRoutingLogic {
-    func navigateToGenres(type: GenresType, characterId: Int)
+    func navigateToGenres(type: SuperHeroInfoDetailType, characterId: Int)
 }
 
 protocol SuperHeroDetailDataPassing {
@@ -44,7 +44,7 @@ extension SuperHeroDetailRouter {}
 
 // MARK: - Routin Logic
 extension SuperHeroDetailRouter: SuperHeroDetailRoutingLogic {
-    func navigateToGenres(type: GenresType, characterId: Int) {
+    func navigateToGenres(type: SuperHeroInfoDetailType, characterId: Int) {
         let genresDependencyContainer = GenresDependencyContainer()
         let genresViewController = genresDependencyContainer.makeGenresViewController(type: type, characterId: characterId)
         viewController?.navigationController?.pushViewController(genresViewController, animated: true)

@@ -22,7 +22,7 @@ class GenresDependencyContainer: DependencyContainer {
 
 // MARK: - Factory
 extension GenresDependencyContainer: GenresFactory {
-    func makeGenresViewController(type: GenresType, characterId: Int) -> GenresViewController {
+    func makeGenresViewController(type: SuperHeroInfoDetailType, characterId: Int) -> GenresViewController {
         let vc = GenresViewController(factory: self)
         vc.router?.dataStore?.characterId = characterId
         vc.router?.dataStore?.type = type

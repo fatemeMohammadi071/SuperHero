@@ -11,7 +11,7 @@ import Foundation
 typealias GenresFactory = GenresViewControllerFactory & GenresServiceFactory
 
 protocol GenresViewControllerFactory {
-    func makeGenresViewController(type: GenresType, characterId: Int) -> GenresViewController
+    func makeGenresViewController(type: SuperHeroInfoDetailType, characterId: Int) -> GenresViewController
 }
 
 protocol GenresServiceFactory {

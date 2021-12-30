@@ -8,7 +8,7 @@
 import Foundation
 
 protocol SuperHeroDetailCellViewModelDelegate: AnyObject {
-    func cellTapped(characterId: Int?, type: GenresType)
+    func cellTapped(characterId: Int?, type: SuperHeroInfoDetailType)
 }
 
 class SuperHeroDetailCellViewModel: DefaultCellViewModel {

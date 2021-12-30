@@ -73,14 +73,14 @@ struct URLElement: Codable {
     let url: String?
 }
 
-// MARK: - SuperHero Detail
+ // MARK: - SuperHero Detail
 struct SuperHeroInfoDetail {
-    let name: GenresType
-    let count: Int
+    let name: SuperHeroInfoDetailType
     let characterId: Int
+    let count : Int
 }
 
-enum GenresType {
+enum SuperHeroInfoDetailType {
     case comics
     case events
     case stories

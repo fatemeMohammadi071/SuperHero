@@ -54,11 +54,6 @@ private extension SuperHeroTableViewCell {
         self.profileImage.addCornerRadius(30)
     }
     
-//    private func setupFirstComicsLabel(text: String) {
-//        self.firstComicsLabel.text = text
-//        self.firstComicsLabel.font = UIFont(type: .montserratLight)
-//    }
-    
     private func setupfirstSeriesLabel(text: String) {
         self.firstSeriesLabel.text = text
         self.firstSeriesLabel.font = UIFont(type: .montserratMedium)

@@ -14,7 +14,7 @@ protocol GenresBusinessLogic {
 
 protocol GenresDataStore {
     var characterId: Int? { get set }
-    var type: GenresType? { get set }
+    var type: SuperHeroInfoDetailType? { get set }
 }
 
 class GenresInteractor: GenresDataStore {
@@ -30,7 +30,7 @@ class GenresInteractor: GenresDataStore {
     
     // MARK: - Properties
     var characterId: Int?
-    var type: GenresType?
+    var type: SuperHeroInfoDetailType?
     
     // MARK: Public
     var presenter: GenresPresentationLogic?
