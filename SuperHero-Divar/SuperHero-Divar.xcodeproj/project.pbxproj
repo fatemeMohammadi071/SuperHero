@@ -105,6 +105,9 @@
 		834506EA277DCB0E0037CAF2 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 834506E5277DCB0E0037CAF2 /* Montserrat-SemiBold.ttf */; };
 		834506EB277DCB0E0037CAF2 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 834506E6277DCB0E0037CAF2 /* Montserrat-Black.ttf */; };
 		834506FB277DCBC50037CAF2 /* Font+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834506FA277DCBC50037CAF2 /* Font+Ext.swift */; };
+		83450701277DFA810037CAF2 /* SuperHeroDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834506FF277DFA810037CAF2 /* SuperHeroDescriptionTableViewCell.swift */; };
+		83450702277DFA810037CAF2 /* SuperHeroDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83450700277DFA810037CAF2 /* SuperHeroDescriptionTableViewCell.xib */; };
+		83450709277DFAC70037CAF2 /* SuperHeroDescriptionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450708277DFAC70037CAF2 /* SuperHeroDescriptionCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -230,6 +233,9 @@
 		834506E5277DCB0E0037CAF2 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		834506E6277DCB0E0037CAF2 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
 		834506FA277DCBC50037CAF2 /* Font+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Ext.swift"; sourceTree = "<group>"; };
+		834506FF277DFA810037CAF2 /* SuperHeroDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		83450700277DFA810037CAF2 /* SuperHeroDescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuperHeroDescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		83450708277DFAC70037CAF2 /* SuperHeroDescriptionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroDescriptionCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -543,9 +549,8 @@
 		8345064D277A4B290037CAF2 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				8345064E277A4B290037CAF2 /* SuperHeroDetailCellViewModel.swift */,
-				83450650277A4B290037CAF2 /* SuperHeroDetailTableViewCell.swift */,
-				8345064F277A4B290037CAF2 /* SuperHeroDetailTableViewCell.xib */,
+				83450707277DFA950037CAF2 /* SuperHeroDetails */,
+				83450706277DFA860037CAF2 /* SuperHeroDescription */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -696,6 +701,26 @@
 			path = Montserrat;
 			sourceTree = "<group>";
 		};
+		83450706277DFA860037CAF2 /* SuperHeroDescription */ = {
+			isa = PBXGroup;
+			children = (
+				83450708277DFAC70037CAF2 /* SuperHeroDescriptionCellViewModel.swift */,
+				834506FF277DFA810037CAF2 /* SuperHeroDescriptionTableViewCell.swift */,
+				83450700277DFA810037CAF2 /* SuperHeroDescriptionTableViewCell.xib */,
+			);
+			path = SuperHeroDescription;
+			sourceTree = "<group>";
+		};
+		83450707277DFA950037CAF2 /* SuperHeroDetails */ = {
+			isa = PBXGroup;
+			children = (
+				8345064E277A4B290037CAF2 /* SuperHeroDetailCellViewModel.swift */,
+				83450650277A4B290037CAF2 /* SuperHeroDetailTableViewCell.swift */,
+				8345064F277A4B290037CAF2 /* SuperHeroDetailTableViewCell.xib */,
+			);
+			path = SuperHeroDetails;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -811,6 +836,7 @@
 				83450662277A4B290037CAF2 /* SuperHeroDetailViewController.xib in Resources */,
 				8345069E277A4D570037CAF2 /* ComicTableViewCell.xib in Resources */,
 				83450660277A4B290037CAF2 /* SuperHeroDetailTableViewCell.xib in Resources */,
+				83450702277DFA810037CAF2 /* SuperHeroDescriptionTableViewCell.xib in Resources */,
 				834506E9277DCB0E0037CAF2 /* Montserrat-Bold.ttf in Resources */,
 				834506EA277DCB0E0037CAF2 /* Montserrat-SemiBold.ttf in Resources */,
 				8345061D277A43840037CAF2 /* SuperHeroTableViewCell.xib in Resources */,
@@ -884,6 +910,7 @@
 				834505DC277A3E430037CAF2 /* CALayer+Ext.swift in Sources */,
 				834505E0277A3E430037CAF2 /* UIView+Ext.swift in Sources */,
 				8345061E277A43840037CAF2 /* SuperHerosLogger.swift in Sources */,
+				83450701277DFA810037CAF2 /* SuperHeroDescriptionTableViewCell.swift in Sources */,
 				834505E8277A3E430037CAF2 /* DependencyContainer.swift in Sources */,
 				8345061C277A43840037CAF2 /* SuperHeroCellViewModel.swift in Sources */,
 				83450697277A4D570037CAF2 /* EventsDataWrapper.swift in Sources */,
@@ -919,6 +946,7 @@
 				834505D9277A3E430037CAF2 /* RequestProtocol.swift in Sources */,
 				83450524277A3CCD0037CAF2 /* AppDelegate.swift in Sources */,
 				83450695277A4D570037CAF2 /* SeriesDataWrapper.swift in Sources */,
+				83450709277DFAC70037CAF2 /* SuperHeroDescriptionCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
