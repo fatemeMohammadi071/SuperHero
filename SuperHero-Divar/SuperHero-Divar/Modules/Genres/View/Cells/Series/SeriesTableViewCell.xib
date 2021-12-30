@@ -25,14 +25,14 @@
                             <constraint firstAttribute="height" constant="40" id="bHz-Ag-URQ"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rA-U6-E1Z">
-                        <rect key="frame" x="196" y="56" width="41.5" height="20.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rA-U6-E1Z">
+                        <rect key="frame" x="36" y="56" width="361" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIC-Pb-ttZ">
-                        <rect key="frame" x="196" y="92.5" width="41.5" height="20.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIC-Pb-ttZ">
+                        <rect key="frame" x="36" y="92.5" width="361" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -88,10 +88,14 @@
                     <constraint firstItem="Sld-hC-5u9" firstAttribute="top" relation="greaterThanOrEqual" secondItem="HzV-AB-o5t" secondAttribute="bottom" constant="16" id="1Io-PB-G0E"/>
                     <constraint firstItem="ygE-Lr-Wyw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="6cW-YE-2Bt"/>
                     <constraint firstItem="wIC-Pb-ttZ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="7i7-jw-Cqj"/>
+                    <constraint firstItem="wIC-Pb-ttZ" firstAttribute="leading" secondItem="0rA-U6-E1Z" secondAttribute="leading" id="8pA-Aq-uoZ"/>
                     <constraint firstItem="ygE-Lr-Wyw" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Dxg-Xv-x5v"/>
                     <constraint firstItem="Sld-hC-5u9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="FGI-c3-JLz"/>
                     <constraint firstItem="0rA-U6-E1Z" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="HAv-4w-rul"/>
                     <constraint firstItem="HzV-AB-o5t" firstAttribute="top" secondItem="wIC-Pb-ttZ" secondAttribute="bottom" constant="8" id="Hkl-nm-cLy"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0rA-U6-E1Z" secondAttribute="trailing" constant="16" id="V8g-HO-fAK"/>
+                    <constraint firstItem="wIC-Pb-ttZ" firstAttribute="trailing" secondItem="0rA-U6-E1Z" secondAttribute="trailing" id="VIO-2N-U2e"/>
+                    <constraint firstItem="0rA-U6-E1Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="Yh9-d4-BV9"/>
                     <constraint firstItem="HzV-AB-o5t" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="d9h-00-W9y"/>
                     <constraint firstItem="wIC-Pb-ttZ" firstAttribute="top" secondItem="0rA-U6-E1Z" secondAttribute="bottom" constant="16" id="g8O-T7-0tM"/>
                     <constraint firstItem="0rA-U6-E1Z" firstAttribute="top" secondItem="ygE-Lr-Wyw" secondAttribute="bottom" constant="8" id="jdY-c7-7uv"/>

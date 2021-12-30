@@ -25,7 +25,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llR-87-jLA">
-                        <rect key="frame" x="64" y="18" width="41.5" height="20.5"/>
+                        <rect key="frame" x="64" y="18" width="260" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -45,6 +45,7 @@
                     <constraint firstItem="beR-2b-edX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="lii-Bq-39t"/>
                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="beR-2b-edX" secondAttribute="bottom" constant="16" id="mZB-bM-NlD"/>
                     <constraint firstItem="beR-2b-edX" firstAttribute="top" secondItem="Cdn-WE-2IL" secondAttribute="bottom" constant="8" id="odT-Mb-Po8"/>
+                    <constraint firstAttribute="trailing" secondItem="llR-87-jLA" secondAttribute="trailing" constant="16" id="qHc-ZF-N5k"/>
                     <constraint firstItem="Cdn-WE-2IL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="xWw-uT-b3m"/>
                 </constraints>
             </tableViewCellContentView>
