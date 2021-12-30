@@ -19,8 +19,10 @@ class SuperHeroTableViewCell: UITableViewCell {
     
     // MARK: - Outlets
     @IBOutlet private weak var titleLabel: UILabel!
-    @IBOutlet private weak var descriptionLabel: UILabel!
+//    @IBOutlet private weak var firstComicsLabel: UILabel!
+    @IBOutlet private weak var firstSeriesLabel: UILabel!
     @IBOutlet private weak var favoriteButton: UIButton!
+    @IBOutlet private weak var profileImage: UIImageView!
 }
 // MARK: - Binder
 extension SuperHeroTableViewCell: Binder {
@@ -36,10 +38,30 @@ extension SuperHeroTableViewCell: Binder {
 // MARK: Private
 private extension SuperHeroTableViewCell {
     private func setupViews(model: SuperHeroInfo) {
-        // TODO: Set text and color
-        self.titleLabel.text = model.name
-        self.descriptionLabel.text = model.modified        
-        setupTapGesture()
+        self.setupTitleLabel(text: model.name ?? "")
+        self.setupProfileImage()
+//        self.setupFirstComicsLabel(text: model.comics?.items?.first?.name ?? "")
+        self.setupfirstSeriesLabel(text: "First Seris: " + (model.series?.items?.first?.name ?? "Nothing"))
+        self.setupTapGesture()
+    }
+    
+    private func setupTitleLabel(text: String) {
+        self.titleLabel.text = text
+        self.titleLabel.font = UIFont(type: .montserratBold)
+    }
+    
+    private func setupProfileImage() {
+        self.profileImage.addCornerRadius(30)
+    }
+    
+//    private func setupFirstComicsLabel(text: String) {
+//        self.firstComicsLabel.text = text
+//        self.firstComicsLabel.font = UIFont(type: .montserratLight)
+//    }
+    
+    private func setupfirstSeriesLabel(text: String) {
+        self.firstSeriesLabel.text = text
+        self.firstSeriesLabel.font = UIFont(type: .montserratMedium)
     }
     
     private func setupTapGesture() {
