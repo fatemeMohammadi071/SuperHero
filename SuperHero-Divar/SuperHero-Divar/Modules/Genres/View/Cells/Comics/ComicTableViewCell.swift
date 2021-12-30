@@ -18,9 +18,9 @@ class ComicTableViewCell: UITableViewCell {
     // MARK: = Delegate
     
     // MARK: - Outlets
-    @IBOutlet private weak var typeLabel: UILabel!
-    @IBOutlet private weak var languageLabel: UILabel!
-    @IBOutlet private weak var priceLabel: UILabel!
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var descriptionLabel: UILabel!
+    @IBOutlet private weak var comicIcon: UIImageView!
 
 }
 // MARK: - Binder
@@ -37,9 +37,17 @@ extension ComicTableViewCell: Binder {
 // MARK: Private
 private extension ComicTableViewCell {
     private func setupViews(model: ComicDetail) {
-        // TODO: Set text and color
-        typeLabel.text = model.textObjects?.first?.type
-        languageLabel.text = model.textObjects?.first?.language
-        priceLabel.text = "\(model.prices?.first?.price)"
+        self.setupTitleLabel(text: model.title ?? "")
+        self.setupDescriptionLabel(text: model.resultDescription ?? "")
+    }
+    
+    func setupTitleLabel(text: String) {
+        self.titleLabel.text = text
+        self.titleLabel.font = UIFont(type: .montserratBold)
+    }
+    
+    func setupDescriptionLabel(text: String) {
+        self.descriptionLabel.text = text
+        self.descriptionLabel.font = UIFont(type: .montserratLight)
     }
 }
