@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qxb-mi-XZc">
-                        <rect key="frame" x="16" y="8" width="362" height="35"/>
+                        <rect key="frame" x="16" y="16" width="362" height="35"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W2Z-PF-H59">
                                 <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
@@ -49,8 +49,8 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="qxb-mi-XZc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="D9a-R9-lut"/>
-                    <constraint firstItem="qxb-mi-XZc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="akd-Qs-mF2"/>
-                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qxb-mi-XZc" secondAttribute="bottom" constant="8" id="apZ-lN-Sga"/>
+                    <constraint firstItem="qxb-mi-XZc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="akd-Qs-mF2"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qxb-mi-XZc" secondAttribute="bottom" constant="16" id="apZ-lN-Sga"/>
                     <constraint firstAttribute="trailing" secondItem="qxb-mi-XZc" secondAttribute="trailing" constant="16" id="blC-M1-OKW"/>
                 </constraints>
             </tableViewCellContentView>
