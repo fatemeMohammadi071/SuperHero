@@ -99,6 +99,12 @@
 		834506AC277A4D570037CAF2 /* GenresLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345068F277A4D570037CAF2 /* GenresLogger.swift */; };
 		834506AD277A4D570037CAF2 /* GenresFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450691277A4D570037CAF2 /* GenresFactory.swift */; };
 		834506AE277A4D570037CAF2 /* GenresDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450692277A4D570037CAF2 /* GenresDependencyContainer.swift */; };
+		834506E7277DCB0E0037CAF2 /* Credit-Card-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 834506E1277DCB0E0037CAF2 /* Credit-Card-Regular.ttf */; };
+		834506E8277DCB0E0037CAF2 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 834506E3277DCB0E0037CAF2 /* Montserrat-Medium.ttf */; };
+		834506E9277DCB0E0037CAF2 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 834506E4277DCB0E0037CAF2 /* Montserrat-Bold.ttf */; };
+		834506EA277DCB0E0037CAF2 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 834506E5277DCB0E0037CAF2 /* Montserrat-SemiBold.ttf */; };
+		834506EB277DCB0E0037CAF2 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 834506E6277DCB0E0037CAF2 /* Montserrat-Black.ttf */; };
+		834506FB277DCBC50037CAF2 /* Font+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834506FA277DCBC50037CAF2 /* Font+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +224,12 @@
 		8345068F277A4D570037CAF2 /* GenresLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenresLogger.swift; sourceTree = "<group>"; };
 		83450691277A4D570037CAF2 /* GenresFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenresFactory.swift; sourceTree = "<group>"; };
 		83450692277A4D570037CAF2 /* GenresDependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenresDependencyContainer.swift; sourceTree = "<group>"; };
+		834506E1277DCB0E0037CAF2 /* Credit-Card-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Credit-Card-Regular.ttf"; sourceTree = "<group>"; };
+		834506E3277DCB0E0037CAF2 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		834506E4277DCB0E0037CAF2 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		834506E5277DCB0E0037CAF2 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		834506E6277DCB0E0037CAF2 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		834506FA277DCBC50037CAF2 /* Font+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -372,6 +384,7 @@
 				834505BD277A3E430037CAF2 /* UIAlertController+Ext.swift */,
 				834505BF277A3E430037CAF2 /* UIView+Ext.swift */,
 				834505BE277A3E430037CAF2 /* UIViewController+Ext.swift */,
+				834506FA277DCBC50037CAF2 /* Font+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -423,6 +436,7 @@
 		834505FD277A42F00037CAF2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				834506E0277DCB0E0037CAF2 /* Fonts */,
 				8345052C277A3CCE0037CAF2 /* Assets.xcassets */,
 				8345052E277A3CCE0037CAF2 /* LaunchScreen.storyboard */,
 				83450627277A46C80037CAF2 /* Config.xcconfig */,
@@ -662,6 +676,26 @@
 			path = DependencyContainer;
 			sourceTree = "<group>";
 		};
+		834506E0277DCB0E0037CAF2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				834506E1277DCB0E0037CAF2 /* Credit-Card-Regular.ttf */,
+				834506E2277DCB0E0037CAF2 /* Montserrat */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		834506E2277DCB0E0037CAF2 /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				834506E3277DCB0E0037CAF2 /* Montserrat-Medium.ttf */,
+				834506E4277DCB0E0037CAF2 /* Montserrat-Bold.ttf */,
+				834506E5277DCB0E0037CAF2 /* Montserrat-SemiBold.ttf */,
+				834506E6277DCB0E0037CAF2 /* Montserrat-Black.ttf */,
+			);
+			path = Montserrat;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -765,6 +799,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				834506E7277DCB0E0037CAF2 /* Credit-Card-Regular.ttf in Resources */,
+				834506E8277DCB0E0037CAF2 /* Montserrat-Medium.ttf in Resources */,
 				834506A7277A4D570037CAF2 /* GenresViewController.xib in Resources */,
 				834506A5277A4D570037CAF2 /* EventTableViewCell.xib in Resources */,
 				834505E2277A3E430037CAF2 /* EmptyListView.xib in Resources */,
@@ -775,9 +811,12 @@
 				83450662277A4B290037CAF2 /* SuperHeroDetailViewController.xib in Resources */,
 				8345069E277A4D570037CAF2 /* ComicTableViewCell.xib in Resources */,
 				83450660277A4B290037CAF2 /* SuperHeroDetailTableViewCell.xib in Resources */,
+				834506E9277DCB0E0037CAF2 /* Montserrat-Bold.ttf in Resources */,
+				834506EA277DCB0E0037CAF2 /* Montserrat-SemiBold.ttf in Resources */,
 				8345061D277A43840037CAF2 /* SuperHeroTableViewCell.xib in Resources */,
 				834505D0277A3E430037CAF2 /* DefaultSectionHeaderFooterView.xib in Resources */,
 				83450619277A43840037CAF2 /* SuperHerosViewController.xib in Resources */,
+				834506EB277DCB0E0037CAF2 /* Montserrat-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -804,6 +843,7 @@
 			files = (
 				83450622277A43840037CAF2 /* SuperHerosDependencyContainer.swift in Sources */,
 				834506A0277A4D570037CAF2 /* ComicTableViewCell.swift in Sources */,
+				834506FB277DCBC50037CAF2 /* Font+Ext.swift in Sources */,
 				834505DF277A3E430037CAF2 /* UIViewController+Ext.swift in Sources */,
 				834505D5277A3E430037CAF2 /* NetworkManager.swift in Sources */,
 				83450699277A4D570037CAF2 /* StoriesDataWrapper.swift in Sources */,
