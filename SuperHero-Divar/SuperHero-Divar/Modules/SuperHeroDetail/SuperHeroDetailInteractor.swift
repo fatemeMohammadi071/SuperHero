@@ -39,31 +39,7 @@ class SuperHeroDetailInteractor: SuperHeroDetailDataStore {
 // MARK: - Methods
 
 // MARK: Private
-private extension SuperHeroDetailInteractor {
-    // FIXME: Fateme write it better
-    private func generateDetailInfo(superHeroInfo: SuperHeroInfo?) -> [SuperHeroInfoDetail] {
-        guard let superHeroInfo = superHeroInfo, let characterId = superHeroInfo.id else { return [] }
-        var superHeroInfoDetails : [SuperHeroInfoDetail] = []
-        if let comicsReturned = superHeroInfo.comics?.returned, comicsReturned != 0 {
-            let superHeroInfoDetail = SuperHeroInfoDetail(name: .comics, count: comicsReturned, characterId: characterId)
-            superHeroInfoDetails.append(superHeroInfoDetail)
-        }
-        if let seriesReturned = superHeroInfo.series?.returned, seriesReturned != 0 {
-            let superHeroInfoDetail = SuperHeroInfoDetail(name: .series, count: seriesReturned, characterId: characterId)
-            superHeroInfoDetails.append(superHeroInfoDetail)
-        }
-        if let storiesReturned = superHeroInfo.stories?.returned, storiesReturned != 0 {
-            let superHeroInfoDetail = SuperHeroInfoDetail(name: .stories, count: storiesReturned, characterId: characterId)
-            superHeroInfoDetails.append(superHeroInfoDetail)
-        }
-        if let eventsReturned = superHeroInfo.events?.returned, eventsReturned != 0 {
-            let superHeroInfoDetail = SuperHeroInfoDetail(name: .events, count: eventsReturned, characterId: characterId)
-            superHeroInfoDetails.append(superHeroInfoDetail)
-        }
-        return superHeroInfoDetails
-        
-    }
-}
+private extension SuperHeroDetailInteractor {}
 
 // MARK: Public
 extension SuperHeroDetailInteractor {}
@@ -71,8 +47,7 @@ extension SuperHeroDetailInteractor {}
 // MARK: - Business Logics
 extension SuperHeroDetailInteractor: SuperHeroDetailBusinessLogic {
     func ShowDetail(request: SuperHeroDetail.SuperHeroDetail.Request) {
-        let superHeroInfoDetails = generateDetailInfo(superHeroInfo: superHeroInfo)
-        presenter?.presentSuperHeroDetail(response: SuperHeroDetail.SuperHeroDetail.Response(superHeroDetail: superHeroInfoDetails, superHeroName: superHeroInfo?.name, isFavorite: superHeroInfo?.isFavorite ?? false))
+        presenter?.presentSuperHeroDetail(response: SuperHeroDetail.SuperHeroDetail.Response(superHeroInfo: superHeroInfo))
         
     }
 }

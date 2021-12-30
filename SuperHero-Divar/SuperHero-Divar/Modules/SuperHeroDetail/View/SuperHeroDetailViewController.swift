@@ -42,8 +42,6 @@ class SuperHeroDetailViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet private weak var tableView: DefaultTableView!
-    @IBOutlet private weak var favoriteButton: UIButton!
-    @IBOutlet private weak var nameLabel: UILabel!
 
 }
 
@@ -79,14 +77,6 @@ private extension SuperHeroDetailViewController {
         router.viewController = viewController
         router.dataStore = interactor
     }
-    
-    private func setFavoriteImage(isFavorite: Bool) {
-        if isFavorite {
-            self.favoriteButton.setImage(#imageLiteral(resourceName: "favorite"), for: .normal)
-        } else {
-            self.favoriteButton.setImage(#imageLiteral(resourceName: "unfavorite"), for: .normal)
-        }
-    }
 }
 
 // MARK: Public
@@ -98,27 +88,14 @@ extension SuperHeroDetailViewController: SuperHeroDetailDisplayLogic {
         guard let sections = viewModel.sections else { return }
         let dataSource = DefaultTableViewDataSource(sections: sections)
         self.tableView.displayData(dataSource)
-        self.nameLabel.text = viewModel.superHeroName
-        self.setFavoriteImage(isFavorite: viewModel.isFavorite)
     }
 }
 
 // MARK: - SuperHeroDetailCellViewModelDelegate
 extension SuperHeroDetailViewController: SuperHeroDetailCellViewModelDelegate {
-    func cellTapped(characterId: Int?, type: GenresType) {
-        // FIXME: Fateme improve this part of code
+    func cellTapped(characterId: Int?, type: SuperHeroInfoDetailType) {
         guard let characterId = characterId else { return }
         router?.navigateToGenres(type: type, characterId: characterId)
-//        switch type {
-//        case .comics:
-//            router?.navigateToComics(characterId: characterId)
-//        case .events:
-//            router?.navigateToEvnets(characterId: characterId)
-//        case .stories:
-//            router?.navigateToStories(characterId: characterId)
-//        case .series:
-//            router?.navigateToSeries(characterId: characterId)
-//        }
     }
 
 }

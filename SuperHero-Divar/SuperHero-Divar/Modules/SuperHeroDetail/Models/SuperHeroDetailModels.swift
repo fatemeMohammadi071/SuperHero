@@ -15,14 +15,10 @@ enum SuperHeroDetail {
         struct Request {
         }
         struct Response {
-            var superHeroDetail: [SuperHeroInfoDetail]?
-            var superHeroName: String?
-            var isFavorite: Bool
+            var superHeroInfo: SuperHeroInfo?
         }
         struct ViewModel {
             var sections: [SectionViewModel]?
-            var superHeroName: String?
-            var isFavorite: Bool
         }
     }
 }
