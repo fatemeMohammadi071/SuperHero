@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -49,7 +50,7 @@
                     </label>
                     <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qkQ-i4-tRN">
                         <rect key="frame" x="8" y="182" width="306" height="1"/>
-                        <color key="backgroundColor" red="0.035431338028169015" green="0.12156139964788733" blue="0.14183538732394366" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" systemColor="separatorColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="YMa-Vg-odZ"/>
                         </constraints>
@@ -81,5 +82,8 @@
     </objects>
     <resources>
         <image name="fairy-tale" width="170.5" height="170.5"/>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
