@@ -172,9 +172,8 @@ extension DefaultTableViewDataSource: UITableViewDelegate {
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let headerView = view as? UITableViewHeaderFooterView {
             let backgroundView = UIView()
-            // FIXME: Fatem
-            backgroundView.backgroundColor = .white//UIColor(colorName: .appWhite)
-            headerView.backgroundView = backgroundView
+            backgroundView.backgroundColor = .white
+            headerView.backgroundColor = .white
         }
     }
 }
