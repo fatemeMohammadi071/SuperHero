@@ -37,7 +37,6 @@ class SuperHerosViewController: KeyboardHandlerViewController {
     }
     
     // MARK: - Properties
-    var offset: Int = 0
     
     // MARK: Private
     private var factory: SuperHerosFactory!
@@ -69,7 +68,7 @@ extension SuperHerosViewController {
         
         setup()
         setupSearch()
-        interactor?.fetchSuperHeros(request: SuperHeros.SuperHeros.Request(offset: 0))
+        interactor?.fetchSuperHeros(request: SuperHeros.SuperHeros.Request())
     
     }
 }
@@ -149,8 +148,7 @@ extension SuperHerosViewController: SuperHerosDisplayLogic {
 extension SuperHerosViewController: PaginationProtocol {
     func loadNextPage() {
         tableView.setTableFooter(footerActitvityIndicator)
-        offset += 1
-        interactor?.fetchSuperHeros(request: SuperHeros.SuperHeros.Request(offset: offset))
+        interactor?.fetchNexSuperHeros(request: SuperHeros.SuperHeros.Request())
     }
 }
 
@@ -173,7 +171,7 @@ extension SuperHerosViewController {}
 extension SuperHerosViewController: UITextFieldDelegate {
     @objc func textFieldValueChanged(_ sender: UITextField) {
         guard let text = sender.text, !text.isEmpty else {
-            self.interactor?.reloaViewController(request: SuperHeros.SuperHeros.Request(offset: 0))
+            self.interactor?.reloaViewController(request: SuperHeros.SuperHeros.Request())
             return
         }
         interactor?.searchCharacter(request: SuperHeros.Search.Request(name: text))

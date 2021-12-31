@@ -13,7 +13,6 @@ enum SuperHeros {
     
     enum SuperHeros {
         struct Request {
-            var offset: Int
         }
         struct Response {
             var superHeros: [SuperHeroInfo]?

@@ -13,6 +13,7 @@ protocol SuperHerosBusinessLogic {
     func searchCharacter(request: SuperHeros.Search.Request)
     func reloaViewController(request: SuperHeros.SuperHeros.Request)
     func didSelectFavorite(request: SuperHeros.Favorite.Request)
+    func fetchNexSuperHeros(request: SuperHeros.SuperHeros.Request)
 }
 
 protocol SuperHerosDataStore {}
@@ -31,6 +32,7 @@ class SuperHerosInteractor: SuperHerosDataStore {
     // MARK: - Properties
     private let debouncer = Debouncer(timeInterval: 0.5)
     private var superHeroInfos: [SuperHeroInfo] = []
+    private var offset: Int = 0
 
     
     // MARK: Public
@@ -49,9 +51,8 @@ extension SuperHerosInteractor {}
 // MARK: - Business Logics
 extension SuperHerosInteractor: SuperHerosBusinessLogic {
     func fetchSuperHeros(request: SuperHeros.SuperHeros.Request) {
-        defer { presenter?.hideLoading(response: SuperHeros.Loading.Response()) }
         presenter?.presentLoading(response: SuperHeros.Loading.Response())
-        worker?.getSuperHeros(offset: request.offset) { [weak self] (result) in
+        worker?.getSuperHeros(offset: 0) { [weak self] (result) in
             guard let self = self else { return }
             switch result {
             case .success(let superHerosInfo):
@@ -59,8 +60,24 @@ extension SuperHerosInteractor: SuperHerosBusinessLogic {
                     self.presenter?.presnetEmptyList(response: SuperHeros.EmptyList.Response())
                     return
                 }
+                self.presenter?.hideLoading(response: SuperHeros.Loading.Response())
                 self.superHeroInfos.append(contentsOf: superHeroInfos)
                 self.presenter?.presentSuperHeros(response: SuperHeros.SuperHeros.Response(superHeros: self.superHeroInfos))
+            case .failure(let erro):
+                self.presenter?.presentError(response: SuperHeros.ErrorModel.Response(requestError: erro))
+            }
+        }
+    }
+    
+    func fetchNexSuperHeros(request: SuperHeros.SuperHeros.Request) {
+        worker?.getSuperHeros(offset: offset) { [weak self] (result) in
+            guard let self = self else { return }
+            switch result {
+            case .success(let superHerosInfo):
+                guard let superHeroInfos: [SuperHeroInfo] = superHerosInfo, !superHeroInfos.isEmpty else { return }
+                self.superHeroInfos.append(contentsOf: superHeroInfos)
+                self.presenter?.presentSuperHeros(response: SuperHeros.SuperHeros.Response(superHeros: self.superHeroInfos))
+                self.offset += 1
             case .failure(let erro):
                 self.presenter?.presentError(response: SuperHeros.ErrorModel.Response(requestError: erro))
             }

@@ -85,7 +85,7 @@ extension ViewStateManagerView where Self: UIView {
     }
     
     func getColor() -> UIColor {
-        return .gray
+        return .white
     }
     
     func getStyle() -> UIActivityIndicatorView.Style {
