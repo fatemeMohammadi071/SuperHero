@@ -42,10 +42,10 @@ class GenresInteractor: GenresDataStore {
 // MARK: Private
 private extension GenresInteractor {
     func getComics(characterId: Int) {
-        defer { presenter?.hideLoading(response: Genres.Loading.Response()) }
         presenter?.presentLoading(response: Genres.Loading.Response())
         worker?.getComics(characterId: characterId) { [weak self] (result) in
             guard let self = self else { return }
+            self.presenter?.hideLoading(response: Genres.Loading.Response())
             switch result {
             case .success(let comics):
                 guard let comics = comics, !comics.isEmpty else {
@@ -60,10 +60,10 @@ private extension GenresInteractor {
     }
     
     func getEvents(characterId: Int) {
-        defer { presenter?.hideLoading(response: Genres.Loading.Response()) }
         presenter?.presentLoading(response: Genres.Loading.Response())
         worker?.getEvents(characterId: characterId) { [weak self] (result) in
             guard let self = self else { return }
+            self.presenter?.hideLoading(response: Genres.Loading.Response())
             switch result {
             case .success(let events):
                 guard let events = events, !events.isEmpty else {
@@ -78,10 +78,10 @@ private extension GenresInteractor {
     }
     
     func getStories(characterId: Int) {
-        defer { presenter?.hideLoading(response: Genres.Loading.Response()) }
         presenter?.presentLoading(response: Genres.Loading.Response())
         worker?.getStroies(characterId: characterId) { [weak self] (result) in
             guard let self = self else { return }
+            self.presenter?.hideLoading(response: Genres.Loading.Response())
             switch result {
             case .success(let stories):
                 guard let stories = stories, !stories.isEmpty else {
@@ -96,10 +96,10 @@ private extension GenresInteractor {
     }
     
     func getSeries(characterId: Int) {
-        defer { presenter?.hideLoading(response: Genres.Loading.Response()) }
         presenter?.presentLoading(response: Genres.Loading.Response())
         worker?.getSeries(characterId: characterId) { [weak self] (result) in
             guard let self = self else { return }
+            self.presenter?.hideLoading(response: Genres.Loading.Response())
             switch result {
             case .success(let series):
                 guard let series = series, !series.isEmpty else {
