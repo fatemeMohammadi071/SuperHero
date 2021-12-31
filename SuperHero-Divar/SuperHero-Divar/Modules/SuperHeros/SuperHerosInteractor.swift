@@ -54,13 +54,13 @@ extension SuperHerosInteractor: SuperHerosBusinessLogic {
         presenter?.presentLoading(response: SuperHeros.Loading.Response())
         worker?.getSuperHeros(offset: 0) { [weak self] (result) in
             guard let self = self else { return }
+            self.presenter?.hideLoading(response: SuperHeros.Loading.Response())
             switch result {
             case .success(let superHerosInfo):
                 guard let superHeroInfos: [SuperHeroInfo] = superHerosInfo, !superHeroInfos.isEmpty else {
                     self.presenter?.presnetEmptyList(response: SuperHeros.EmptyList.Response())
                     return
                 }
-                self.presenter?.hideLoading(response: SuperHeros.Loading.Response())
                 self.superHeroInfos.append(contentsOf: superHeroInfos)
                 self.presenter?.presentSuperHeros(response: SuperHeros.SuperHeros.Response(superHeros: self.superHeroInfos))
             case .failure(let erro):
