@@ -141,7 +141,7 @@ extension SuperHerosViewController: SuperHerosDisplayLogic {
     }
     
     func displayEmptyList(viewModel: SuperHeros.EmptyList.ViewModel) {
-        self.tableView.showEmptyListView("There ios no result")
+        self.tableView.showEmptyListView("There is no result")
     }
 }
 

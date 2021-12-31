@@ -16,6 +16,7 @@ protocol GenresPresentationLogic {
     func presentLoading(response: Genres.Loading.Response)
     func presentError(response: Genres.ErrorModel.Response)
     func hideLoading(response: Genres.Loading.Response)
+    func presentEmptyList(response: Genres.EmptyList.Response)
 }
 
 class GenresPresenter {
@@ -91,8 +92,7 @@ extension GenresPresenter {}
 // MARK: - Presentation Logic
 extension GenresPresenter: GenresPresentationLogic {
     func presentComics(response: Genres.Comics.Response) {
-        guard let comics = response.comics else { return }
-        let cells = createComicsCellViewModels(comics)
+        let cells = createComicsCellViewModels(response.comics)
         let sections = [createSectionViewModels(cells)]
         let viewModel = Genres.Genres.ViewModel(sections: sections)
         DispatchQueue.main.async{ [weak self] in
@@ -102,8 +102,7 @@ extension GenresPresenter: GenresPresentationLogic {
     }
     
     func presentEvents(response: Genres.Events.Response) {
-        guard let events = response.events else { return }
-        let cells = createEventsCellViewModels(events)
+        let cells = createEventsCellViewModels(response.events)
         let sections = [createSectionViewModels(cells)]
         let viewModel = Genres.Genres.ViewModel(sections: sections)
         DispatchQueue.main.async{ [weak self] in
@@ -114,8 +113,7 @@ extension GenresPresenter: GenresPresentationLogic {
     
     
     func presentStories(response: Genres.Stories.Response) {
-        guard let stories = response.stories else { return }
-        let cells = createStoriesCellViewModels(stories)
+        let cells = createStoriesCellViewModels(response.stories)
         let sections = [createSectionViewModels(cells)]
         let viewModel = Genres.Genres.ViewModel(sections: sections)
         DispatchQueue.main.async{ [weak self] in
@@ -125,8 +123,7 @@ extension GenresPresenter: GenresPresentationLogic {
     }
     
     func presentSeries(response: Genres.Series.Response) {
-        guard let series = response.series else { return }
-        let cells = createSeriesCellViewModels(series)
+        let cells = createSeriesCellViewModels(response.series)
         let sections = [createSectionViewModels(cells)]
         let viewModel = Genres.Genres.ViewModel(sections: sections)
         DispatchQueue.main.async{ [weak self] in
@@ -153,5 +150,12 @@ extension GenresPresenter: GenresPresentationLogic {
         DispatchQueue.main.async{ [weak self] in
             guard let self = self else { return }
             self.viewController?.hideLoading(viewModel: Genres.Loading.ViewModel())}
+    }
+    
+    func presentEmptyList(response: Genres.EmptyList.Response) {
+        DispatchQueue.main.async{ [weak self] in
+            guard let self = self else { return }
+            self.viewController?.displayEmptyList(viewModel: Genres.EmptyList.ViewModel(type: response.type))
+        }
     }
 }

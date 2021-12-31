@@ -13,6 +13,7 @@ protocol GenresDisplayLogic: AnyObject {
     func displayLoading(viewModel: Genres.Loading.ViewModel)
     func hideLoading(viewModel: Genres.Loading.ViewModel)
     func displayError(viewModel: Genres.ErrorModel.ViewModel)
+    func displayEmptyList(viewModel: Genres.EmptyList.ViewModel)
 }
 
 class GenresViewController: UIViewController {
@@ -108,6 +109,10 @@ extension GenresViewController: GenresDisplayLogic {
     func displayError(viewModel: Genres.ErrorModel.ViewModel) {
         let action = UIAlertAction.init(title: "OK".localize(), style: .cancel, handler: nil)
         self.presentMessege(title: "Error".localize(), message: viewModel.requestError.localizedDescription, additionalActions: action, preferredStyle: .alert)
+    }
+    
+    func displayEmptyList(viewModel: Genres.EmptyList.ViewModel) {
+        self.tableView.showEmptyListView("There is no \(viewModel.type)")
     }
 }
 

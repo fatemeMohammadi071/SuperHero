@@ -24,7 +24,7 @@ enum Genres {
         struct Request {
         }
         struct Response {
-            var comics: [ComicDetail]?
+            var comics: [ComicDetail]
         }
         struct ViewModel {
         }
@@ -34,7 +34,7 @@ enum Genres {
         struct Request {
         }
         struct Response {
-            var events: [EventDetail]?
+            var events: [EventDetail]
         }
         struct ViewModel {
         }
@@ -44,7 +44,7 @@ enum Genres {
         struct Request {
         }
         struct Response {
-            var stories: [StroyDetail]?
+            var stories: [StroyDetail]
         }
         struct ViewModel {
         }
@@ -54,7 +54,7 @@ enum Genres {
         struct Request {
         }
         struct Response {
-            var series: [SeriesDetail]?
+            var series: [SeriesDetail]
         }
         struct ViewModel {
         }
@@ -73,6 +73,15 @@ enum Genres {
         }
         struct ViewModel {
             var requestError: Error
+        }
+    }
+    
+    enum EmptyList {
+        struct Response {
+            let type: String
+        }
+        struct ViewModel {
+            let type: String
         }
     }
 }

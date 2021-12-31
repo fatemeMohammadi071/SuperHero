@@ -48,6 +48,10 @@ private extension GenresInteractor {
             guard let self = self else { return }
             switch result {
             case .success(let comics):
+                guard let comics = comics, !comics.isEmpty else {
+                    self.presenter?.presentEmptyList(response: Genres.EmptyList.Response(type: "Comics"))
+                    return
+                }
                 self.presenter?.presentComics(response: Genres.Comics.Response(comics: comics))
             case .failure(let erro):
                 self.presenter?.presentError(response: Genres.ErrorModel.Response(requestError: erro))
@@ -62,6 +66,10 @@ private extension GenresInteractor {
             guard let self = self else { return }
             switch result {
             case .success(let events):
+                guard let events = events, !events.isEmpty else {
+                    self.presenter?.presentEmptyList(response: Genres.EmptyList.Response(type: "Events"))
+                    return
+                }
                 self.presenter?.presentEvents(response: Genres.Events.Response(events: events))
             case .failure(let erro):
                 self.presenter?.presentError(response: Genres.ErrorModel.Response(requestError: erro))
@@ -76,6 +84,10 @@ private extension GenresInteractor {
             guard let self = self else { return }
             switch result {
             case .success(let stories):
+                guard let stories = stories, !stories.isEmpty else {
+                    self.presenter?.presentEmptyList(response: Genres.EmptyList.Response(type: "Stroies"))
+                    return
+                }
                 self.presenter?.presentStories(response: Genres.Stories.Response(stories: stories))
             case .failure(let erro):
                 self.presenter?.presentError(response: Genres.ErrorModel.Response(requestError: erro))
@@ -90,6 +102,10 @@ private extension GenresInteractor {
             guard let self = self else { return }
             switch result {
             case .success(let series):
+                guard let series = series, !series.isEmpty else {
+                    self.presenter?.presentEmptyList(response: Genres.EmptyList.Response(type: "Series"))
+                    return
+                }
                 self.presenter?.presentSeries(response: Genres.Series.Response(series: series))
             case .failure(let erro):
                 self.presenter?.presentError(response: Genres.ErrorModel.Response(requestError: erro))
