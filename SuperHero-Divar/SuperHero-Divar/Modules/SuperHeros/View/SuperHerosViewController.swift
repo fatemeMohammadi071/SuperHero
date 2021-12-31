@@ -17,7 +17,7 @@ protocol SuperHerosDisplayLogic: SuperHeroCellViewModelDelegate {
     func displayEmptyList(viewModel: SuperHeros.EmptyList.ViewModel)
 }
 
-class SuperHerosViewController: UIViewController {
+class SuperHerosViewController: KeyboardHandlerViewController {
     // MARK: - Object lifecycle
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

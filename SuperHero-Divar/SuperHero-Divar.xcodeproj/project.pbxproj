@@ -108,6 +108,10 @@
 		83450701277DFA810037CAF2 /* SuperHeroDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834506FF277DFA810037CAF2 /* SuperHeroDescriptionTableViewCell.swift */; };
 		83450702277DFA810037CAF2 /* SuperHeroDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83450700277DFA810037CAF2 /* SuperHeroDescriptionTableViewCell.xib */; };
 		83450709277DFAC70037CAF2 /* SuperHeroDescriptionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83450708277DFAC70037CAF2 /* SuperHeroDescriptionCellViewModel.swift */; };
+		83AF25F2277F72920075E9C5 /* KeyboardHandlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF25EE277F72920075E9C5 /* KeyboardHandlerViewController.swift */; };
+		83AF25F3277F72920075E9C5 /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF25EF277F72920075E9C5 /* KeyboardHandler.swift */; };
+		83AF25F4277F72920075E9C5 /* KeyboardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF25F0277F72920075E9C5 /* KeyboardInfo.swift */; };
+		83AF25F5277F72920075E9C5 /* KeyboardHandlerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF25F1277F72920075E9C5 /* KeyboardHandlerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -236,6 +240,10 @@
 		834506FF277DFA810037CAF2 /* SuperHeroDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		83450700277DFA810037CAF2 /* SuperHeroDescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuperHeroDescriptionTableViewCell.xib; sourceTree = "<group>"; };
 		83450708277DFAC70037CAF2 /* SuperHeroDescriptionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroDescriptionCellViewModel.swift; sourceTree = "<group>"; };
+		83AF25EE277F72920075E9C5 /* KeyboardHandlerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardHandlerViewController.swift; sourceTree = "<group>"; };
+		83AF25EF277F72920075E9C5 /* KeyboardHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
+		83AF25F0277F72920075E9C5 /* KeyboardInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardInfo.swift; sourceTree = "<group>"; };
+		83AF25F1277F72920075E9C5 /* KeyboardHandlerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardHandlerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,6 +323,7 @@
 		834505A5277A3E430037CAF2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				83AF25ED277F72920075E9C5 /* KeyboardHandler */,
 				83450523277A3CCD0037CAF2 /* AppDelegate.swift */,
 				834505C9277A3E430037CAF2 /* Debouncer.swift */,
 				834505CC277A3E430037CAF2 /* SuperHeroErrors.swift */,
@@ -721,6 +730,17 @@
 			path = SuperHeroDetails;
 			sourceTree = "<group>";
 		};
+		83AF25ED277F72920075E9C5 /* KeyboardHandler */ = {
+			isa = PBXGroup;
+			children = (
+				83AF25EE277F72920075E9C5 /* KeyboardHandlerViewController.swift */,
+				83AF25EF277F72920075E9C5 /* KeyboardHandler.swift */,
+				83AF25F0277F72920075E9C5 /* KeyboardInfo.swift */,
+				83AF25F1277F72920075E9C5 /* KeyboardHandlerDelegate.swift */,
+			);
+			path = KeyboardHandler;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -912,6 +932,7 @@
 				8345061E277A43840037CAF2 /* SuperHerosLogger.swift in Sources */,
 				83450701277DFA810037CAF2 /* SuperHeroDescriptionTableViewCell.swift in Sources */,
 				834505E8277A3E430037CAF2 /* DependencyContainer.swift in Sources */,
+				83AF25F5277F72920075E9C5 /* KeyboardHandlerDelegate.swift in Sources */,
 				8345061C277A43840037CAF2 /* SuperHeroCellViewModel.swift in Sources */,
 				83450697277A4D570037CAF2 /* EventsDataWrapper.swift in Sources */,
 				834505E5277A3E430037CAF2 /* ViewStateManagerView.swift in Sources */,
@@ -927,7 +948,9 @@
 				83450623277A43840037CAF2 /* SuperHerosFactory.swift in Sources */,
 				83450663277A4B290037CAF2 /* SuperHeroDetailLogger.swift in Sources */,
 				8345069B277A4D570037CAF2 /* SeriesTableViewCell.swift in Sources */,
+				83AF25F3277F72920075E9C5 /* KeyboardHandler.swift in Sources */,
 				834505D4277A3E430037CAF2 /* ResponseModel.swift in Sources */,
+				83AF25F2277F72920075E9C5 /* KeyboardHandlerViewController.swift in Sources */,
 				83450668277A4B290037CAF2 /* SuperHeroDetailFactory.swift in Sources */,
 				83450669277A4B290037CAF2 /* SuperHeroDetailDependencyContainer.swift in Sources */,
 				83450666277A4B290037CAF2 /* SuperHeroDetailService.swift in Sources */,
@@ -938,6 +961,7 @@
 				834506AC277A4D570037CAF2 /* GenresLogger.swift in Sources */,
 				834506AD277A4D570037CAF2 /* GenresFactory.swift in Sources */,
 				834505DE277A3E430037CAF2 /* UIAlertController+Ext.swift in Sources */,
+				83AF25F4277F72920075E9C5 /* KeyboardInfo.swift in Sources */,
 				8345061A277A43840037CAF2 /* SuperHerosViewController.swift in Sources */,
 				8345069F277A4D570037CAF2 /* ComicTableCellViewModel.swift in Sources */,
 				8345065C277A4B290037CAF2 /* SuperHeroDetailInteractor.swift in Sources */,
