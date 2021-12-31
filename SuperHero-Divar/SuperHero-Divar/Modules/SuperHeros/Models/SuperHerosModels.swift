@@ -57,4 +57,15 @@ enum SuperHeros {
         struct ViewModel {
         }
     }
+    
+    enum Favorite {
+        struct Request {
+            var id: Int
+            var isFavorite: Bool
+        }
+        struct Response {
+        }
+        struct ViewModel {
+        }
+    }
 }

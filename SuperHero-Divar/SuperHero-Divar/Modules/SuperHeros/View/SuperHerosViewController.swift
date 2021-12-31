@@ -160,6 +160,11 @@ extension SuperHerosViewController: SuperHeroCellViewModelDelegate {
         guard let model = model else { return }
         self.router?.navigateToSuperHeroDetail(superHeroInfo: model)
     }
+    
+    func favoriteButtonTapped(id: Int?, isFavorite: Bool) {
+        guard let id = id else { return }
+        interactor?.didSelectFavorite(request: SuperHeros.Favorite.Request(id: id, isFavorite: isFavorite))
+    }
 }
 
 // MARK: - Actions

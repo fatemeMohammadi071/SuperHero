@@ -9,6 +9,7 @@ import Foundation
 
 protocol SuperHeroCellViewModelDelegate: AnyObject {
     func cellTapped(model: SuperHeroInfo?)
+    func favoriteButtonTapped(id: Int?, isFavorite: Bool)
 }
 
 class SuperHeroCellViewModel: DefaultCellViewModel {

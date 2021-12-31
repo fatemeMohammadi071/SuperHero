@@ -12,6 +12,7 @@ protocol SuperHerosBusinessLogic {
     func fetchSuperHeros(request: SuperHeros.SuperHeros.Request)
     func searchCharacter(request: SuperHeros.Search.Request)
     func reloaViewController(request: SuperHeros.SuperHeros.Request)
+    func didSelectFavorite(request: SuperHeros.Favorite.Request)
 }
 
 protocol SuperHerosDataStore {}
@@ -84,5 +85,17 @@ extension SuperHerosInteractor: SuperHerosBusinessLogic {
     
     func reloaViewController(request: SuperHeros.SuperHeros.Request) {
         self.presenter?.presentSuperHeros(response: SuperHeros.SuperHeros.Response(superHeros: self.superHeroInfos))
+    }
+    
+    func didSelectFavorite(request: SuperHeros.Favorite.Request) {
+        var updateModel = self.superHeroInfos.filter { $0.id == request.id }.first
+        updateModel?.isFavorite = request.isFavorite
+        if let index = self.superHeroInfos.firstIndex(where: { (superInfo) -> Bool in
+            superInfo.id == request.id
+        }), let updateModel = updateModel  {
+            self.superHeroInfos.remove(at: index)
+            self.superHeroInfos.insert(updateModel, at: index)
+            self.presenter?.presentSuperHeros(response: SuperHeros.SuperHeros.Response(superHeros: self.superHeroInfos))
+        }
     }
 }

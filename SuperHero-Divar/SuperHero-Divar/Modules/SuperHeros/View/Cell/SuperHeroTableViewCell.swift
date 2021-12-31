@@ -40,6 +40,7 @@ private extension SuperHeroTableViewCell {
         self.setupTitleLabel(text: model.name ?? "")
         self.setupProfileImage()
         self.setupfirstSeriesLabel(text: "First Seris: " + (model.series?.items?.first?.name ?? "Nothing"))
+        self.setupFavoriteButton(isFavorite: model.isFavorite ?? false)
         self.setupTapGesture()
     }
     
@@ -55,6 +56,11 @@ private extension SuperHeroTableViewCell {
     private func setupfirstSeriesLabel(text: String) {
         self.firstSeriesLabel.text = text
         self.firstSeriesLabel.font = UIFont(type: .montserratMedium)
+    }
+    
+    private func setupFavoriteButton(isFavorite: Bool) {
+        let image: UIImage = isFavorite ? #imageLiteral(resourceName: "favorite") : #imageLiteral(resourceName: "unfavorite")
+        self.favoriteButton.setImage(image, for: .normal)
     }
     
     private func setupTapGesture() {
@@ -77,5 +83,6 @@ extension SuperHeroTableViewCell {
             model?.isFavorite = true
             favoriteButton.setImage(#imageLiteral(resourceName: "favorite"), for: .normal)
         }
+        viewModel?.delegate?.favoriteButtonTapped(id: model?.id, isFavorite: model?.isFavorite ?? false)
     }
 }

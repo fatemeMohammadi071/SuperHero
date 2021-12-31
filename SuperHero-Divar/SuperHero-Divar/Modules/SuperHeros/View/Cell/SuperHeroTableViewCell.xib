@@ -50,7 +50,7 @@
                         <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                         <state key="normal" image="unfavorite"/>
                         <connections>
-                            <action selector="favoriteButtonDidTapped" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ji7-6a-0u5"/>
+                            <action selector="favoriteButtonDidTapped" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4JP-bx-hy8"/>
                         </connections>
                     </button>
                 </subviews>
@@ -67,10 +67,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="favoriteButton" destination="eXV-bx-6xK" id="QSg-a0-WEO"/>
-                <outlet property="firstSeriesLabel" destination="Epi-iy-gay" id="5mv-o3-mNp"/>
-                <outlet property="profileImage" destination="KBT-OS-Hbm" id="1iX-x5-Jkf"/>
-                <outlet property="titleLabel" destination="cpH-i3-uV8" id="tmO-T4-3OO"/>
+                <outlet property="favoriteButton" destination="eXV-bx-6xK" id="Ly9-3p-FD4"/>
+                <outlet property="firstSeriesLabel" destination="Epi-iy-gay" id="XdR-8b-vVM"/>
+                <outlet property="profileImage" destination="KBT-OS-Hbm" id="0yw-Pz-t8N"/>
+                <outlet property="titleLabel" destination="cpH-i3-uV8" id="Gt2-MK-vmX"/>
             </connections>
             <point key="canvasLocation" x="160.86956521739131" y="131.91964285714286"/>
         </tableViewCell>
