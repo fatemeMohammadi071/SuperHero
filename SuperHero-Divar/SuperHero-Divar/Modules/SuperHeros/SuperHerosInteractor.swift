@@ -55,8 +55,7 @@ extension SuperHerosInteractor: SuperHerosBusinessLogic {
             switch result {
             case .success(let superHerosInfo):
                 guard let superHeroInfos: [SuperHeroInfo] = superHerosInfo, !superHeroInfos.isEmpty else {
-                    // TODO: Show empty list
-                    self.presenter?.presentError(response: SuperHeros.ErrorModel.Response(requestError: SuperHeroErrors.errorNoResult))
+                    self.presenter?.presnetEmptyList(response: SuperHeros.EmptyList.Response())
                     return
                 }
                 self.superHeroInfos.append(contentsOf: superHeroInfos)

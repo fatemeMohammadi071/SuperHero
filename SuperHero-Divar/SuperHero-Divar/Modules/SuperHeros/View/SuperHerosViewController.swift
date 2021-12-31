@@ -14,6 +14,7 @@ protocol SuperHerosDisplayLogic: SuperHeroCellViewModelDelegate {
     func displayLoading(viewModel: SuperHeros.Loading.ViewModel)
     func hideLoading(viewModel: SuperHeros.Loading.ViewModel)
     func displayError(viewModel: SuperHeros.ErrorModel.ViewModel)
+    func displayEmptyList(viewModel: SuperHeros.EmptyList.ViewModel)
 }
 
 class SuperHerosViewController: UIViewController {
@@ -48,6 +49,8 @@ class SuperHerosViewController: UIViewController {
             spinner.hidesWhenStopped = true
             return spinner
         }()
+    private lazy var emptyView = EmptyListView()
+
     
     // MARK: Public
     var interactor: SuperHerosBusinessLogic?
@@ -135,6 +138,10 @@ extension SuperHerosViewController: SuperHerosDisplayLogic {
     func displayError(viewModel: SuperHeros.ErrorModel.ViewModel) {
         let action = UIAlertAction.init(title: "OK".localize(), style: .cancel, handler: nil)
         self.presentMessege(title: "Error".localize(), message: viewModel.requestError.localizedDescription, additionalActions: action, preferredStyle: .alert)
+    }
+    
+    func displayEmptyList(viewModel: SuperHeros.EmptyList.ViewModel) {
+        self.tableView.showEmptyListView("There ios no result")
     }
 }
 

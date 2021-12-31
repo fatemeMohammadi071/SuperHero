@@ -16,8 +16,7 @@ protocol EmptyListViewProtocol {
 class EmptyListView: UIView {
     @IBOutlet private weak var emptyText: UILabel! {
         didSet {
-            // FIXME: Fateme, Color
-            self.emptyText.textColor = .gray//UIColor(colorName: .appGray)
+            self.emptyText.textColor = .gray
         }
     }
 

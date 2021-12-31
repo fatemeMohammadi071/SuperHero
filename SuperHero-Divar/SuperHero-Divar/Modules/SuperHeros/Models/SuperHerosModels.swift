@@ -50,4 +50,11 @@ enum SuperHeros {
             var requestError: Error
         }
     }
+    
+    enum EmptyList {
+        struct Response {
+        }
+        struct ViewModel {
+        }
+    }
 }

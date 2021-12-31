@@ -14,6 +14,7 @@ protocol SuperHerosPresentationLogic {
     func presentLoading(response: SuperHeros.Loading.Response)
     func presentError(response: SuperHeros.ErrorModel.Response)
     func hideLoading(response: SuperHeros.Loading.Response)
+    func presnetEmptyList(response: SuperHeros.EmptyList.Response)
 }
 
 class SuperHerosPresenter {
@@ -98,6 +99,14 @@ extension SuperHerosPresenter: SuperHerosPresentationLogic {
     func hideLoading(response: SuperHeros.Loading.Response) {
         DispatchQueue.main.async{ [weak self] in
             guard let self = self else { return }
-            self.viewController?.hideLoading(viewModel: SuperHeros.Loading.ViewModel())}
+            self.viewController?.hideLoading(viewModel: SuperHeros.Loading.ViewModel())
+        }
+    }
+    
+    func presnetEmptyList(response: SuperHeros.EmptyList.Response) {
+        DispatchQueue.main.async{ [weak self] in
+            guard let self = self else { return }
+            self.viewController?.displayEmptyList(viewModel: SuperHeros.EmptyList.ViewModel())
+        }
     }
 }
